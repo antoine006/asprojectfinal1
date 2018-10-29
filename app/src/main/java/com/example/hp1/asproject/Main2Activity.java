@@ -25,7 +25,7 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
         arrayList.add(new Item(R.drawable.mainback,"Biography"));
         LvCountries = findViewById(R.id.ILVcountries);
         arrayList.add(new Item(R.drawable.biography,"Biography"));
-        arrayList.add(new Item(R.drawable.action,"acrion"));
+        arrayList.add(new Item(R.drawable.action,"action"));
         arrayList.add(new Item(R.drawable.crime,"crime"));
         arrayList.add(new Item(R.drawable.drama,"drama"));
         arrayList.add(new Item(R.drawable.sceince,"Sceince"));
