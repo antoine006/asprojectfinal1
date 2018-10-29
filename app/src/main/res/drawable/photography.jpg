@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en">
+
+
+
+
+
+
+
+
+
+<head>
+    <script>
+        feedPath = '/bin/data/inspire'; //Using this for our Angluar app.js
+        feedSelection = '';
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Photography </title>
+    
+	<link rel="apple-touch-icon" sizes="57x57" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/etc/clientlibs/adobe-inspire/main/images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/etc/clientlibs/adobe-inspire/main/images/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/etc/clientlibs/adobe-inspire/main/images/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/etc/clientlibs/adobe-inspire/main/images/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/etc/clientlibs/adobe-inspire/main/images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/etc/clientlibs/adobe-inspire/main/images/favicons/manifest.json">
+	<link rel="mask-icon" href="/etc/clientlibs/adobe-inspire/main/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/etc/clientlibs/adobe-inspire/main/images/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-TileImage" content="/etc/clientlibs/adobe-inspire/main/images/favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="/etc/clientlibs/adobe-inspire/main/images/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adobe Create Magazine&rsquo;s page devoted to photographers and photography, featuring both prominent and up-and-coming photographers. " />
+    <meta property="og:image" content="/etc/clientlibs/adobe-inspire/main/images/facebook_header_create.jpg" />
+    <meta http-equiv="Cache-Control" content="max-age=3600"/>
+    <link rel="canonical" href="https://create.adobe.com/content/microsites/inspire/en/photography.html">
+    
+
+    
+<link rel="stylesheet" href="/etc/clientlibs/adobe-inspire/main.css" type="text/css"/>
+<script type="text/javascript" src="/etc/clientlibs/adobe-inspire/main.js"></script>
+
+
+
+<link href="/etc/designs/default.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="/etc/clientlibs/adobe-inspire/main/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
+
+    <!-- <script type="text/javascript" src="/etc/clientlibs/adobe-inspire/main/js/inspire.home.article-list.js"></script> -->
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/rem.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="//use.typekit.net/lvh3jos.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!--script src="//assets.adobedtm.com/659ec8ada5450db95675e43beaaae92399591a11/satelliteLib-46e65db5bb0c375f8f64619be31cc9b29acf4867.js"></script-->
+    <!-- GDPR -->
+    <script src="https://wwwimages.adobe.com/etc/beagle/public/globalnav/adobe-privacy/stable/privacy.min.js"></script>
+    <!-- tracking config -->
+    
+    <script>
+        window.addEventListener(window.adobePrivacy.events.privacy_consent, function() {
+            console.log("consent given");
+            window.adobePrivacy.loadResource({path: '//assets.adobedtm.com/659ec8ada5450db95675e43beaaae92399591a11/satelliteLib-46e65db5bb0c375f8f64619be31cc9b29acf4867.js', type: 'script'});
+        });
+    </script>
+    
+    <script type="text/javascript">
+        window.pageTagOverride = "photography";
+    </script>
+    
+    <link rel="next" href="https://create.adobe.com/photography.page2.html"/>
+    <link rel="prev" href="#"/>
+
+    
+    
+</head>
+
+
+<body class="new-style" ng-app="inspireArticles">
+<div class="master-offset">
+	<div class="master-container" ng-controller="inspireAppController">
+		
+<nav id="mobile-left-rail" class="nodesktop">
+    <!--<a href="javascript:void(0);" class="close-mobile-rail">+</a>-->
+    <section class="nav-selection">
+        <ul class="nav-selection-list">
+            <li class="topic-list">
+                <ul class="nav-menu-list">
+                    
+                    <li><a href="https://create.adobe.com/graphic-design.html">Graphic Design</a></li>
+                    <li><a href="https://create.adobe.com/illustration.html">Illustration</a></li>
+                    <li><a href="https://create.adobe.com/motion-graphics.html">Motion Graphics</a></li>
+                    <li><a href="https://create.adobe.com/photography.html">Photography</a></li>
+                    <div class="mobile-reserve-container" style="height:0px;">
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/art-direction.html">Art Direction</a></li>
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/audio-video.html">Audio/Video</a></li>
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/branding.html">Branding</a></li>
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/2015/4/30/adobe_creative_residency.html">Creative Residency</a></li>
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/screen-design.html">Screen Design</a></li>
+                    </div>
+                    <li class="nav-reserve-plus"><a href="javascript:void(0)">More...</a></li>
+                    <li class="nav-reserve-minus" style="display:none;"><a href="javascript:void(0)">...Less</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="nav-sub-right">
+        <ul class="nav-icon-list">
+            <!--li>
+                <a href="/content/microsites/inspire/en/search.html" class="inspire-icon-search" title="Search"><span>Search</span></a>
+            </li-->
+            <li>
+                <a href="https://twitter.com/adobecreate" class="inspire-icon-twitter" title="Follow" target="_blank"><span>Follow</span></a>
+            </li>
+            <li>
+                <a href="https://create.adobe.com/lets_be_friends.html" class="inspire-icon-subscribe" title="Let's Be Friends - Subscribe"><span>Let's Be Friends</span></a>
+            </li>
+            <li>
+                <a href="https://create.adobe.com/lets_be_friends.html" id="app-download-link" class="inspire-icon-get-app" title="Get App"><span>Get App</span></a>
+                <script type="text/javascript">
+                    if (getMobileOperatingSystem() == 'iOS')
+                        $('#app-download-link').attr('href','http://itunes.apple.com/us/app/adobe-inspire/id536737621');
+                    else if (getMobileOperatingSystem() == 'Android')
+                         $('#app-download-link').attr('href','https://play.google.com/store/apps/details?id=com.adobe.dpspubs.inspire');                
+                </script>
+            </li>
+        </ul>
+    </section>
+</nav>
+<nav class="page-navigation-group group">
+    <section class="page-navigation">
+        <div class="nav-header">
+            <a href="javascript:void(0);" class="nodesktop inspire-icon-menu"></a>
+            <a class="nav-create-logo" href="https://create.adobe.com/">
+                <div class="inspire-icon-create"></div>
+            </a>
+            <span class="nav-header-title nomobile">ADOBE CREATE MAGAZINE</span>
+            <div class="nav-sub">
+                <ul class="nav-icon-list">
+                    <!--li class="search-list-item">
+                        <a href="javascript:void(0)" class="nav-icon-menu-item inspire-icon-search-v3" title="Search"></a>
+                        <form id="site-search" name="site-search" method="get" action="/content/microsites/inspire/en/search.html" class="nav-sub-search ng-pristine ng-valid">
+                            <input id="search-input" type="text" title="Search" name="q" placeholder="Search">
+                        </form>
+                    </li-->
+                    <li>
+                        <a href="https://create.adobe.com/lets_be_friends.html" class="nav-icon-menu-item inspire-icon-subscribe-v3" title="Let's Be Friends - Subscribe"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/adobecreate" class="inspire-icon-twitter-v3" title="Twitter" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="nav-adobe-logo inspire-icon-adobe" href="http://www.adobe.com" title="Adobe.com" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <section class="nav-selection">
+            <ul class="nav-selection-list">
+                
+                <li><a href="https://create.adobe.com/graphic-design.html" class="">Graphic Design</a></li>
+                <li><a href="https://create.adobe.com/illustration.html" class="">Illustration</a></li>
+                <li><a href="https://create.adobe.com/motion-graphics.html" class="">Motion Graphics</a></li>
+                <li><a href="https://create.adobe.com/photography.html" class="active-topic">Photography</a></li>
+                <li><span>More...</span>
+                    <ul class="nav-selection-more">
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/art-direction.html" class="">Art Direction</a></li>
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/audio-video.html" class="">Audio/Video</a></li>
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/branding.html" class="">Branding</a></li>
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/2015/4/30/adobe_creative_residency.html" class="">Creative Residency</a></li>
+                        <li class="reserve-article-topics"><a href="https://create.adobe.com/screen-design.html" class="">Screen Design</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </section> 
+</nav>
+
+<div class="category-title-group-container group">
+    <aside class="category-title">PHOTOGRAPHY</aside>
+    <aside class="category-description">Adobe Create Magazine’s page devoted to photographers and photography, featuring both prominent and up-and-coming photographers. </aside>
+</div>
+   
+		
+
+
+
+
+
+
+<div class="content-area-main">
+    <div class="articles-flow-area">
+        
+        
+
+        <div id="article-lazyload-area" class="page-articles-group group page-content-4 page-articles " >
+            <div id="content-column-1" class="content-column " >
+                
+                    <article class='content-item article-page-headline' data-idx='0'>
+                        
+                            
+                            <header class="font-small">
+                                
+                                
+                                    <h1 class="article-headline">Photography </h1>
+                                
+
+                                <p class="article-byline">Adobe Create Magazine’s page devoted to photographers and photography, featuring both prominent and up-and-coming photographers. </p>
+                            </header>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='01'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/10/3/puppy_love_and_puppy.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/10/grace-chon-doggies/home.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">Puppy Love and Puppy Style: Pet Photographer Grace Chon </h3>
+                                
+                                
+
+                                <p class="article-byline">Chon’s new book features before-and-after shots of dogs groomed in the Japanese style. </p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='04'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/8/31/_5_3_4_questions_ska.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/08/skander-khlif/zhome.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">5 &amp; 3/4 Questions: Skander Khlif</h3>
+                                
+                                
+
+                                <p class="article-byline">This Munich-based street photographer travels the world in search beautiful moments. </p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='07'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/7/9/_5_3_4_questions_ali.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/07/5-3-4-alicia-ruis/xxhome.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">5 &amp; 3/4 Questions: Alicia Rius</h3>
+                                
+                                
+
+                                <p class="article-byline">Rius has a passion for animals and animal photography, but she also has a wide range of other influences. </p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='10'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/6/22/_why_drag_photograph.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/06/magnus-hastings/xxxhome.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">‘Why Drag?’ Photographer Magnus Hastings Discusses His Favorite Subject</h3>
+                                
+                                
+
+                                <p class="article-byline">A go-to photographer in the drag world, Hastings’s new project aims to bring visibility to all LGBTQ+ communities.</p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='13'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/6/6/minimalism_and_milad.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/06/milad-safabakhsh/milad_homepage.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">Minimalism and Milad Safabakhsh</h3>
+                                
+                                
+
+                                <p class="article-byline">Meet the Iranian digital artist and publisher</p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='16'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/5/17/getting_into_travel_.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/05/getting-into-travel-photography-find-the-details/travel_homepage.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">Getting into Travel Photography: Find the Details</h3>
+                                
+                                
+
+                                <p class="article-byline">Think repetition, motif, and rhythm.</p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='19'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/4/27/street_photography_i.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/04/street-photography-in-the-urban-landscape/steve-simon-homepage.jpg" alt="Steve Simon shot this photo of people waiting for a bus in Lisbon, Portugal."/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">Street Photography in the Urban Landscape</h3>
+                                
+                                
+
+                                <p class="article-byline">Organize chaos with tips on gear, interaction, and editing.</p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='22'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/4/1/how_to_print_your_ph.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/04/how-to-print-photos/printing-photos-homepage.jpg" alt="Rick Le Page shot this stunning landscape photo in Mykonos."/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">How to Print Your Photos</h3>
+                                
+                                
+
+                                <p class="article-byline">Output files to many materials and sizes with this quick guide.</p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='25'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/3/20/it_started_with_a_ha.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/03/girlgaze/girlgaze_homepage.jpg" alt="Submission to #Girlgaze from Sophie Green; Bangers and Smash"/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">It Started with a Hashtag: Girlgaze</h3>
+                                
+                                
+
+                                <p class="article-byline">Gen Z photographers have a friend in Girlgaze.</p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+                    <article class='content-item ' data-idx='28'>
+                        
+                            
+                        <a href="https://create.adobe.com/2018/2/20/head_for_the_hills_w.html" class="isNotAd">
+                              <div class="hover-overlay"></div>
+                              <img data-height="400" data-width="600" src="/content/dam/2018/2/kopernikk/koppernikhome.jpeg" alt=""/>
+                            
+                            <header class="font-small">
+                                
+                                    <h3 class="article-headline">Head for the Hills with Kopernikk</h3>
+                                
+                                
+
+                                <p class="article-byline">With his dog, Sitka, always at his side, this Czech photographer shoots evocative mountain landscapes that are, for him, a form of therapy. </p>
+                            </header>
+                            
+                        </a>
+                            
+                        
+                        
+                    </article>
+                
+            </div>
+            <div id="content-column-2" class="content-column " >
+                
+                    <article class="content-item" data-idx='02'>
+                        
+                        <a href="https://create.adobe.com/2018/10/1/a_treat_for_the_imag.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/10/thibault-delhom/xxhome copy.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">A Treat for the Imagination: Thibault Delhom’s Photographic Images</h3>
+                                <p class="article-byline">The multidisciplinary artist’s work defies easy categorization. 
+</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='05'>
+                        
+                        <a href="https://create.adobe.com/2018/8/14/special_places_speci.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/08/special-places,-special-colors/andrew_ling_homepage.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Special Places, Special Colors</h3>
+                                <p class="article-byline">It’s easy to extract unique color palettes from photos.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='08'>
+                        
+                        <a href="https://create.adobe.com/2018/7/2/make_it_in_a_minute_.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/07/make-it-in-a-minute--neon-effect-in-photoshop/neon-homepage.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Make It in a Minute: Neon Effect in Photoshop</h3>
+                                <p class="article-byline">Get your neon glow on with this 60-second tutorial.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='11'>
+                        
+                        <a href="https://create.adobe.com/2018/6/20/getting_into_photo_c.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/06/getting-into-photo-composition/composition-homepage.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Getting into Photo Composition</h3>
+                                <p class="article-byline">Want better photos? Follow these tips.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='14'>
+                        
+                        <a href="https://create.adobe.com/2018/5/29/the_shadowy_street_p.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/05/shadowy-street-photography-of-luca-cascianelli-/luca_homepage2.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">The Shadowy Street Photography of Luca Cascianelli </h3>
+                                <p class="article-byline">Cascianelli wanders Rome’s alleys in search of mystery—and light.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='17'>
+                        
+                        <a href="https://create.adobe.com/2018/5/4/building_other_world.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/05/building-other-worlds-with-photoshop/jacob-watts-outer-space-homepage.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Building Other Worlds with Photoshop</h3>
+                                <p class="article-byline">Outer space has a gravitational hold on Jacob Watts&#039;s imagination. </p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='20'>
+                        
+                        <a href="https://create.adobe.com/2018/4/11/sharing_stories_in_p.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/04/fran-mart-sharing-stories-in-photos/fran-mart-homepage.jpg" alt="Fran Mart can convey a mood in a single image. See how he does it. "/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Sharing Stories in Photos</h3>
+                                <p class="article-byline">Watch Fran Mart enhance an image to create a certain mood.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='23'>
+                        
+                        <a href="https://create.adobe.com/2018/3/27/getting_into_flash_p.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/03/getting-into-flash-photography/flash-photography-homepage.jpg" alt="This photo of a model and a person holding a flash behind a diffuser is from The Flash Book by Scott Kelby."/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Getting into Flash Photography</h3>
+                                <p class="article-byline">Take better pictures with off-camera flash.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='26'>
+                        
+                        <a href="https://create.adobe.com/2018/3/14/from_physician_to_ph.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/03/from-physician-to-photographer---george-digalakis-/digilakis_homepage.jpg" alt="George Digalakis creates minimalist, melancholic, black-and-white imagery, sometimes compositing them in Adobe Photoshop."/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">From Physician to Photographer</h3>
+                                <p class="article-byline">Minimalist and melancholy, these images linger in your memory.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+            </div>
+            <div id="content-column-3" class="content-column " >
+                
+                    <article class="content-item" data-idx='03'>
+                        
+                        <a href="https://create.adobe.com/2018/9/4/adriana_napolitano_b.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/09/adriana-napolitano/home.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Adriana Napolitano Blends Pop, Surrealism, and Humor in Her Work</h3>
+                                <p class="article-byline">A family tradition of craft inspires the artist’s creations in paper, photography, set design, and more. </p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='06'>
+                        
+                        <a href="https://create.adobe.com/2018/7/24/quick_clean_ups_in_p.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/07/pei-ketron-quick-clean-ups-in-photoshop/pei_ketron_homepage.jpg" alt="Pei Ketron shot this photo while traveling, then removed distractions in Adobe Photoshop CC."/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Quick Clean-Ups in Photoshop</h3>
+                                <p class="article-byline">Remove distractions with two easy tools.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='09'>
+                        
+                        <a href="https://create.adobe.com/2018/6/29/hip_hop_photographer.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/06/zach-wolf/xxxhome.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Hip-Hop Photographer Zach Wolfe Is Still Hungry </h3>
+                                <p class="article-byline">Drawn to Atlanta by his love of hip-hop, Wolfe has photographed some of the industry’s biggest names—and it all started when a chance encounter led to a big break. </p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='12'>
+                        
+                        <a href="https://create.adobe.com/2018/6/8/opening_eyes_nick_br.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/06/opening-eyes--nick-brandt-on-nature-conservation-and-photography/brandt-homepage.jpg" alt="Nick Brandt created this image, entitled &quot;Wasteland with Elephant, 2015.&quot;"/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Opening Eyes: Nick Brandt on Nature Conservation and Photography</h3>
+                                <p class="article-byline">Photographer Nick Brandt is making a difference. </p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='15'>
+                        
+                        <a href="https://create.adobe.com/2018/5/24/free_photoshop_actio.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/05/photoshop-action-giveaway/newhome.jpeg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Free Photoshop Action Set: Mike Campau’s Looking Glass Effects</h3>
+                                <p class="article-byline">We’re sharing a free action set for Adobe Photoshop—use it to create glass-distortion effects in your work. </p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='18'>
+                        
+                        <a href="https://create.adobe.com/2018/5/1/celebrating_sports_f.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/05/warriors-night/zzzhome.jpg" alt=""/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Celebrating Sports Fans with Aundre Larrow</h3>
+                                <p class="article-byline">The Adobe Creative Resident designed a special T-shirt for fans of the NBA Golden State Warriors.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='21'>
+                        
+                        <a href="https://create.adobe.com/2018/3/30/getting_into_night_p.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/03/getting-into-night-photography/night-photography-homepage.jpg" alt="To take good photos at night, like this cityscape, follow tips from Alan Hess."/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">Getting into Night Photography</h3>
+                                <p class="article-byline">Whether you&#039;re in the city or the country, these tips will help.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='24'>
+                        
+                        <a href="https://create.adobe.com/2018/3/26/how_swopes_creates_u.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/03/elise-swopes-instagram/elise_swopes_instagram_homepage.jpg" alt="By combining her own photo of the Chicago skyline with Adobe Stock stars and clouds, Elis Swopes creates this new vision."/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">How Swopes Creates Unique Perspectives for Instagram</h3>
+                                <p class="article-byline">By combining several images, she gives her own stamp to Adobe Stock.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+                    <article class="content-item" data-idx='27'>
+                        
+                        <a href="https://create.adobe.com/2018/3/9/_mostly_black_and_wh.html" class="isNotAd">
+                            <div class="hover-overlay"></div>
+                            
+                            <img data-height="400" data-width="600" src="/content/dam/2018/03/black-and-white-photographers-on-instagram/blackandwhiteinstagram_homepage.jpg" alt="Whether you want to be a better photographer or just like beautiful black and white images, follow these 13 Instagram accounts."/>
+                            
+                            <header class="font-small">
+                                <h3 class="article-headline">(Mostly) Black and White Photographers to Follow on Instagram </h3>
+                                <p class="article-byline">Gorgeous images can teach you how to be a better photographer.</p>
+                            </header>
+                        </a>
+                        
+                        
+                    </article>
+                
+            </div>
+
+        </div>
+
+        <div class="lazy-load-button hide-on-mobile">
+            <a href="#" class="start-lazy-load previous-page disable-button">
+                <span class="enable-button">PREVIOUS PAGE</span>
+            </a>
+            <span class="page-pagination">PAGE 1 OF 7</span>
+            <a href="https://create.adobe.com/photography.page2.html" class="start-lazy-load next-page ">
+                <span class="enable-button">NEXT PAGE</span>
+            </a>
+        </div>
+        <div class="lazy-load-button show-on-mobile">
+            <div>
+                <span class="page-pagination">PAGE 1 OF 7</span>
+            </div>
+            <div class="mobile-pagination-buttons-container">
+                <div class="mobile-pagination-buttons">
+                    <a href="#" class="start-lazy-load previous-page disable-button">
+                        <span class="enable-button">PREVIOUS PAGE</span>
+                    </a>
+                </div>
+                <div class="mobile-pagination-buttons">
+                    <a href="https://create.adobe.com/photography.page2.html" class="start-lazy-load next-page ">
+                        <span class="enable-button">NEXT PAGE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        
+<footer>
+    <div class="footer-nav-group group">
+        <div class="footer-about-text" >Create is Adobe&rsquo;s online magazine by creatives, for creatives. <br>Visit us for inspiration and tutorials on photography, illustration, graphic design, UI/UX design, motion graphics, video, and more. Formerly Adobe Inspire Magazine.</div>
+        <div class="inspire-icon-create"></div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="https://create.adobe.com/lets_be_friends.html">Let&#146;s Be Friends</a></li>
+                <li><a href="https://create.adobe.com/lets_talk.html">Contact</a></li>
+                <li><a href="http://www.adobe.com/legal/general-terms.html" target="_blank">Terms of Use</a></li>
+                <li><a href="https://create.adobe.com/help.html">Help</a></li>
+                <li><a href="http://www.adobe.com/privacy.html" target="_blank">Privacy</a></li>
+                <li><div class="evidon-notice-link"></div></li>
+            </ul>
+        </nav> 
+    </div>
+</footer>
+    </div>
+</div>
+	</div>
+</div>
+
+<!-- Tracking -->
+<script type="text/javascript">_satellite.pageBottom();</script>
+</body>
+</html>

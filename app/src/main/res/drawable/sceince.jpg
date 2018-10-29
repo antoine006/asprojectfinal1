@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr" prefix="fb: http://www.facebook.com/2008/fbml content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><![endif]-->
+  <!--[if !IE]><!--><html class="no-js" lang="en" dir="ltr" prefix="fb: http://www.facebook.com/2008/fbml content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+<link rel="apple-touch-icon-precomposed" href="https://science.nasa.gov/sites/all/themes/custom/science_nasa/apple-touch-icon-precomposed-72x72.png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" href="https://science.nasa.gov/sites/all/themes/custom/science_nasa/apple-touch-icon-precomposed-114x114.png" sizes="114x114" />
+<link rel="apple-touch-icon-precomposed" href="https://science.nasa.gov/sites/all/themes/custom/science_nasa/apple-touch-icon-precomposed-144x144.png" sizes="144x144" />
+<link rel="apple-touch-icon-precomposed" href="https://science.nasa.gov/sites/all/themes/custom/science_nasa/apple-touch-icon-precomposed.png" />
+<meta http-equiv="cleartype" content="on" />
+<meta name="MobileOptimized" content="width" />
+<link rel="alternate" type="application/rss+xml" title="Science Mission Directorate RSS" href="https://science.nasa.gov/rss.xml" />
+<link rel="shortcut icon" href="https://science.nasa.gov/sites/all/themes/custom/science_nasa/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width" />
+    <title>Science Mission Directorate | Science</title>
+    <style>
+@import url("https://science.nasa.gov/sites/all/themes/contrib/omega/omega/css/modules/system/system.base.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/themes/contrib/omega/omega/css/modules/system/system.menus.theme.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/themes/contrib/omega/omega/css/modules/system/system.messages.theme.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/themes/contrib/omega/omega/css/modules/system/system.theme.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/date/date_api/date.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/themes/contrib/omega/omega/css/modules/comment/comment.theme.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/scald/modules/fields/mee/css/editor-global.css?pgrfwv");
+@import url("https://science.nasa.gov/modules/node/node.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/scald_file/scald_file.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/themes/contrib/omega/omega/css/modules/field/field.theme.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/custom/scald_library_youtube_icon/css/scald_library_youtube_icon.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/extlink/extlink.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/views/css/views.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/themes/contrib/omega/omega/css/modules/user/user.base.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/themes/contrib/omega/omega/css/modules/user/user.theme.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/ckeditor/css/ckeditor.css?pgrfwv");
+</style>
+<style>
+@import url("https://science.nasa.gov/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/ctools/css/ctools.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/panels/css/panels.css?pgrfwv");
+</style>
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" media="all" />
+<style>
+@import url("https://science.nasa.gov/sites/all/modules/contrib/qtip/css/qtip.css?pgrfwv");
+</style>
+<style>#welcome-banner{display:none;background-color:#3351ab;color:#fff;padding:15px 0 20px 25px;margin-top:98px;font-size:80%;}#welcome-banner .text-container{display:inline-block;width:90%;}#welcome-banner .text-container p{color:#fff;text-align:center;font-weight:200;margin:0;padding-top:2px;}#welcome-banner .text-container a{color:#fff}.button-container{float:right;width:9%;padding-right:12px;}.button-container button{float:right;font-size:125%;width:35px;padding:5px 10px 10px;text-align:center;border:0;background-color:initial;}
+.countdownHolder{font-size:20px}
+.countdownHolder{font-size:20px}
+</style>
+<style>
+@import url("https://science.nasa.gov/sites/all/libraries/jquery-countdown/assets/countdown/jquery.countdown.css?pgrfwv");
+</style>
+<style>.countdownHolder{font-size:20px}
+</style>
+<style>
+@import url("https://science.nasa.gov/sites/all/modules/contrib/mobile_navigation/mobile_navigation.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/libraries/fontawesome/css/font-awesome.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/libraries/mmenu/main/src/css/jquery.mmenu.all.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/libraries/mmenu/icomoon/icomoon.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/modules/contrib/mmenu/themes/mm-basic/styles/mm-basic.css?pgrfwv");
+</style>
+<style>
+@import url("https://science.nasa.gov/sites/all/themes/custom/science_nasa/css/science-nasa.hacks.css?pgrfwv");
+@import url("https://science.nasa.gov/sites/all/themes/custom/science_nasa/css/science-nasa.styles.css?pgrfwv");
+</style>
+<style>body{background-color:#FFFFFF !important;background-image:url('https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/styles/background_image_file_size/public/thumbnails/image/blacksea_amo_2015008_lrg.jpg?itok=ekDoW2oq') !important;background-repeat:no-repeat !important;background-attachment:fixed !important;background-position:center top !important;}
+</style>
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One:regular|Raleway:100,200,300,500,600,700,800,900&amp;subset=latin,latin-ext" media="all" />
+    <script src="https://science.nasa.gov/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+<script src="https://science.nasa.gov/misc/jquery.once.js?v=1.2"></script>
+<script src="https://science.nasa.gov/misc/drupal.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/themes/contrib/omega/omega/js/no-js.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/extlink/extlink.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/libraries/colorbox/jquery.colorbox-min.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/colorbox/js/colorbox.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/colorbox/js/colorbox_load.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/colorbox/js/colorbox_inline.js?pgrfwv"></script>
+<script src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/qtip/js/qtip.js?pgrfwv"></script>
+<script>function closeWelcomeButton() { (function($) { $('#welcome-banner').fadeOut();})(jQuery); }</script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/scald_file/scald_file.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/scald/modules/providers/scald_image/scald_image.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/mobile_navigation/js/mobile_menu.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/mobile_navigation/mobile_navigation.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/mmenu/js/mmenu.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/libraries/mmenu/hammer/hammer.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/libraries/mmenu/jquery.hammer/jquery.hammer.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/libraries/mmenu/main/src/js/jquery.mmenu.min.all.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/js/jquery.checkbox.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/js/search-expand.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/js/_debounce.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/js/science-nasa.behaviors.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/js/science-nasa.header.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/js/science-nasa.main-navigation.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/js/bootstrap-carousel.js?pgrfwv"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"instances":"[]","qtipDebug":"{\u0022leaveElement\u0022:0}","urlIsAjaxTrusted":{"\/search":true},"scaldFile":{"path":"sites\/all\/modules\/contrib\/scald_file\/scald_file.css"},"field_countdown":{"coundownSetting0":{"coundownSetting_suffix":"0-81725300-1540202457","coundownSetting_time":"1540540800"},"coundownSetting1":{"coundownSetting_suffix":"0-82054600-1540202457","coundownSetting_time":"1543262400"},"coundownSetting2":{"coundownSetting_suffix":"0-82161500-1540202457","coundownSetting_time":"1543348800"}},"mmenu":{"mmenu_left":{"enabled":"1","title":"Left menu","name":"mmenu_left","blocks":[{"module_delta":"system|main-menu","menu_parameters":{"min_depth":"1"},"title":"\u003Cnone\u003E","collapsed":"0","wrap":"1","module":"system","delta":"main-menu"}],"options":{"classes":"mm-basic","effects":[],"slidingSubmenus":false,"clickOpen":{"open":true,"selector":"#hamburger a"},"counters":{"add":false,"update":true},"dragOpen":{"open":true,"pageNode":"body","threshold":100,"maxStartPos":50},"footer":{"add":false,"content":"","title":"Copyright \u00a92016","update":true},"header":{"add":false,"content":"","title":"Science Mission Directorate","update":true},"labels":{"collapse":false},"offCanvas":{"enabled":true,"modal":false,"moveBackground":true,"position":"left","zposition":"front"},"searchfield":{"add":false,"addTo":"menu","search":false,"placeholder":"Search","noResults":"No results found.","showLinksOnly":true}},"configurations":{"clone":false,"preventTabbing":false,"panelNodetype":"div, ul, ol","transitionDuration":400,"classNames":{"label":"Label","panel":"Panel","selected":"Selected","buttonbars":{"buttonbar":"anchors"},"counters":{"counter":"Counter"},"fixedElements":{"fixedTop":"FixedTop","fixedBottom":"FixedBottom"},"footer":{"panelFooter":"Footer"},"header":{"panelHeader":"Header","panelNext":"Next","panelPrev":"Prev"},"labels":{"collapsed":"Collapsed"},"toggles":{"toggle":"Toggle","check":"Check"}},"dragOpen":{"width":{"perc":0.8,"min":140,"max":440},"height":{"perc":0.8,"min":140,"max":880}},"offCanvas":{"menuInjectMethod":"prepend","menuWrapperSelector":"body","pageNodetype":"div","pageSelector":"body \u003E div"}},"custom":[],"position":"left"}},"mobile_navigation":{"breakpoint":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","menuSelector":".secondary-menu","menuPlugin":"basic","showEffect":"expand_down","showItems":"all","tabHandler":1,"menuWidth":"65","specialClasses":0,"mainPageSelector":".l-page","useMask":1,"menuLabel":"Menu","expandActive":0},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"}});</script>
+        <script type="text/javascript">
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0070/1109.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
+  </head>
+  <body class="html front not-logged-in page-node">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    <!-- analytics tracking -->
+        <!-- end analytics tracking -->
+        <div class="l-page">
+  <div class="top-container">
+
+    <header class="site-header site-header--sticky" role="banner">
+
+  <div class="site-header__container">
+    <div class="site-header__branding">
+              <span class="site-header__site-logo"><img class="site-header__site-logo-img" width="72" src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/logo.png" alt="Home" /></span>
+        <!-- <a href="https://www.nasa.gov" title="www.nasa.gov" rel="external" class="site-header__site-logo"><img class="site-header__site-logo-img" width="72" src="https://science.nasa.gov/sites/all/themes/custom/science_nasa/logo.png" alt="Home" /></a> -->
+      
+                        <h1 class="site-name element-invisible">
+            <a href="/" title="Home" rel="home"><span>NASA Science Mission Directorate</span></a>
+          </h1>
+        
+                  <h1 class="site-header__site-slogan">
+            <a class="site-header__site-slogan-link" href="/" title="Home" rel="home"><span>NASA Science</span></a>
+            <div class="site-header__site-sub-slogan">Share the Science</div>
+          </h1>
+              
+    </div>
+
+    <div class="site-header__main-nav-mobile-toggle"><a href=""><i class="fa fa-navicon"></i></a></div>
+    <nav class="site-header__navigation" role="navigation">
+        <div class="l-region l-region--branding">
+    <nav id="block-menu-block-5" role="navigation" class="block block--menu-block block--menu-block-5">
+      
+  <div class="site-header__wrapper"><ul class="site-header__main-nav-container"><div class="site-header__main-nav-item site-header__search-form"><form class="views-exposed-form-es-connector-view-main-search" action="/search" method="get" id="views-exposed-form-es-connector-view-main-search" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-search-api-views-text-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-search-api-views-text">
+  <label class="element-invisible" for="edit-search-api-views-text">Ask a Question </label>
+ <input placeholder="Ask a Question" type="text" id="edit-search-api-views-text" name="search_api_views_text" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-es-connector-view" name="" value="Ask" class="form-submit" />    </div>
+      </div>
+</div>
+</div></form></div><li class="site-header__main-nav-item first expanded active menu-mlid-1046 "><a href="/" title="Science Topics" class="site-header__main-nav-item-link active">Science Topics</a><ul class="site-header__sub-nav"><li class="site-header__sub-nav-item "><a href="/astrophysics" title="Universe" class="site-header__sub-nav-item-link">Universe</a></li><li class="site-header__sub-nav-item "><a href="/solar-system" title="Solar System" class="site-header__sub-nav-item-link">Solar System</a></li><li class="site-header__sub-nav-item "><a href="/heliophysics" title="Sun" class="site-header__sub-nav-item-link">Sun</a></li><li class="site-header__sub-nav-item "><a href="/earth-science" title="Earth" class="site-header__sub-nav-item-link">Earth</a></li><li class="site-header__sub-nav-item "><a href="/missions-page" title="Missions" class="site-header__sub-nav-item-link">Missions</a></li><li class="site-header__sub-nav-item "><a href="/technology" title="Science &amp; Technology" class="site-header__sub-nav-item-link">Science &amp; Technology</a></li></ul></li><li class="site-header__main-nav-item expanded menu-mlid-1047 "><a href="/science-news" title="Science News" class="site-header__main-nav-item-link">Science News</a><ul class="site-header__sub-nav"><li class="site-header__sub-nav-item "><a href="/science-news" title="Science@NASA" class="site-header__sub-nav-item-link">Science@NASA</a></li><li class="site-header__sub-nav-item "><a href="https://www.nasa.gov/content/science-mission-directorate-press-releases" title="Press Releases" class="site-header__sub-nav-item-link">Press Releases</a></li></ul></li><li class="site-header__main-nav-item expanded menu-mlid-1049 "><a href="/researchers" title="For Researchers" class="site-header__main-nav-item-link">For Researchers</a><ul class="site-header__sub-nav"><li class="site-header__sub-nav-item "><a href="/researchers" title="Overview" class="site-header__sub-nav-item-link">Overview</a></li><li class="site-header__sub-nav-item "><a href="/researchers/sara/faqs" title="FAQ" class="site-header__sub-nav-item-link">FAQ</a></li><li class="site-header__sub-nav-item "><a href="/researchers/sara/grant-solicitations" title="Grant Funding" class="site-header__sub-nav-item-link">Grant Funding</a></li><li class="site-header__sub-nav-item "><a href="/researchers/sara/letters-from-sara" title="Letters From SARA" class="site-header__sub-nav-item-link">Letters From SARA</a></li><li class="site-header__sub-nav-item "><a href="/researchers/roses-blogs" title="ROSES Blog" class="site-header__sub-nav-item-link">ROSES Blog</a></li><li class="site-header__sub-nav-item "><a href="/science-committee" title="NAC Science Committee" class="site-header__sub-nav-item-link">NAC Science Committee</a></li><li class="site-header__sub-nav-item "><a href="/researchers/sara/program-officers-list" title="Our Team" class="site-header__sub-nav-item-link">Our Team</a></li><li class="site-header__sub-nav-item "><a href="https://www.nasa.gov/open/researchaccess" title="Data &amp; Pubs Rules" class="site-header__sub-nav-item-link">Data &amp; Pubs Rules</a></li></ul></li><li class="site-header__main-nav-item expanded menu-mlid-1053 "><a href="/learners" title="Learners" class="site-header__main-nav-item-link">Learners</a><ul class="site-header__sub-nav"><li class="site-header__sub-nav-item "><a href="/learners" title="Overview" class="site-header__sub-nav-item-link">Overview</a></li><li class="site-header__sub-nav-item "><a href="/stem-activation-team" title="Team" class="site-header__sub-nav-item-link">Team</a></li><li class="site-header__sub-nav-item "><a href="/learners/reach-map" title="Reach Map" class="site-header__sub-nav-item-link">Reach Map</a></li><li class="site-header__sub-nav-item site-header__main-nav-header-item "><a href="/" title="Resources" class="site-header__sub-nav-item-link site-header__main-nav-header-item-link active">Resources</a></li><li class="site-header__sub-nav-item "><a href="/contact-science-activation" title="Hotline" class="site-header__sub-nav-item-link">Hotline</a></li><li class="site-header__sub-nav-item "><a href="/learners/sme-map" title="SME Map" class="site-header__sub-nav-item-link">SME Map</a></li><li class="site-header__sub-nav-item "><a href="/learners/learner-opportunities" title="Learner Opportunities" class="site-header__sub-nav-item-link">Learner Opportunities</a></li><li class="site-header__sub-nav-item "><a href="/learners/nuggets" title="Nuggets" class="site-header__sub-nav-item-link">Nuggets</a></li><li class="site-header__sub-nav-item "><a href="http://spaceplace.nasa.gov/" title="Space Place" class="site-header__sub-nav-item-link">Space Place</a></li></ul></li><li class="site-header__main-nav-item expanded menu-mlid-1756 "><a href="/get-involved" title="Get Involved" class="site-header__main-nav-item-link">Get Involved</a><ul class="site-header__sub-nav"><li class="site-header__sub-nav-item "><a href="/citizenscientists" title="Citizen Scientists" class="site-header__sub-nav-item-link">Citizen Scientists</a></li><li class="site-header__sub-nav-item "><a href="/get-involved/inspiration" title="Inspiration" class="site-header__sub-nav-item-link">Inspiration</a></li><li class="site-header__sub-nav-item "><a href="https://www.nasa.gov/calendar/" title="Upcoming Events" class="site-header__sub-nav-item-link">Upcoming Events</a></li><li class="site-header__sub-nav-item site-header__main-nav-header-item "><a href="/" title="Connect" class="site-header__sub-nav-item-link site-header__main-nav-header-item-link active">Connect</a></li><li class="site-header__sub-nav-item "><a href="/about-us/email-updates" title="Email Sign Up" class="site-header__sub-nav-item-link">Email Sign Up</a></li><li class="site-header__sub-nav-item "><a href="/get-involved/follow-us" title="Follow Us" class="site-header__sub-nav-item-link">Follow Us</a></li><li class="site-header__sub-nav-item site-header__main-nav-header-item "><a href="/" title="Resources" class="site-header__sub-nav-item-link site-header__main-nav-header-item-link active">Resources</a></li><li class="site-header__sub-nav-item "><a href="/toolkits" title="Toolkits" class="site-header__sub-nav-item-link">Toolkits</a></li><li class="site-header__sub-nav-item "><a href="https://svs.gsfc.nasa.gov/cgi-bin/search.cgi?contentType=hw" title="Visual Presentations " class="site-header__sub-nav-item-link">Visual Presentations </a></li></ul></li><li class="site-header__main-nav-item last expanded menu-mlid-1051 "><a href="/about-us" title="About Us" class="site-header__main-nav-item-link">About Us</a><ul class="site-header__sub-nav"><li class="site-header__sub-nav-item "><a href="/about-us" title="Overview" class="site-header__sub-nav-item-link">Overview</a></li><li class="site-header__sub-nav-item "><a href="/about-us/leadership/bios" title="Science Leadership" class="site-header__sub-nav-item-link">Science Leadership</a></li><li class="site-header__sub-nav-item "><a href="https://solarsystem.nasa.gov/people/ " title="People" class="site-header__sub-nav-item-link">People</a></li><li class="site-header__sub-nav-item site-header__main-nav-header-item "><a href="/" title="Resources" class="site-header__sub-nav-item-link site-header__main-nav-header-item-link active">Resources</a></li><li class="site-header__sub-nav-item "><a href="/about-us/science-strategy" title="Science Strategy" class="site-header__sub-nav-item-link">Science Strategy</a></li><li class="site-header__sub-nav-item "><a href="/about-us/job-opportunities" title="Job Opportunities" class="site-header__sub-nav-item-link">Job Opportunities</a></li><li class="site-header__sub-nav-item site-header__main-nav-header-item "><a href="/" title="Connect" class="site-header__sub-nav-item-link site-header__main-nav-header-item-link active">Connect</a></li><li class="site-header__sub-nav-item "><a href="/about-us/communications" title="Communications" class="site-header__sub-nav-item-link">Communications</a></li><li class="site-header__sub-nav-item "><a href="/about-us/contact-us" title="Contact Us" class="site-header__sub-nav-item-link">Contact Us</a></li></ul></li></ul></div></nav>
+  </div>
+          </nav>
+      </div>
+
+</header>
+        
+    <div class="l-main l-main--home">
+      <div class="l-content l-content--home" role="main">
+        <a id="main-content"></a>
+        <section class="l-home__row l-home__row--head">
+          <h2 class="l-home__section-title"></h2>
+          <div class="l-home__background-source">
+              <div class="l-region l-region--navigation">
+    <div id="block-views-e5809707d82a48fe04650f593e40a2ed" class="block block--views block--views-e5809707d82a48fe04650f593e40a2ed">
+        <div class="block__content">
+    <div class="view view-random-background view-id-random_background view-display-id-index_bg_block bg-block view-dom-id-8b6a1e628feaeb35b07559ce8ae964f6">
+        
+  
+  
+      <div class="view-content">
+        <div
+	 class=" image_none views-row views-row-1 views-row-odd views-row-first views-row-last"		>
+      
+  <div class="views-field views-field-field-image-link">        <div class="field-content">
+<a href="http://earthobservatory.nasa.gov/NaturalHazards/view.php" target="_blank">Learn About This Image</a></div>  </div>  
+  <div class="views-field views-field-field-master-image">        <div class="field-content">
+</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+          </div>
+          <!-- <div class="l-home__row-head-section"> -->
+          <div class="l-home__row-item l-home__row-item--head">
+            <div class="l-home__row-item-container">
+              <h3 class="l-home__row-item-title">Features</h3>
+              <div class="home-features">
+                  <div class="home-features__item">
+
+  <div class="home-features__item-background">
+    <a href="https://www.nasa.gov/image-feature/goddard/2018/hubble-spies-glittering-star-cluster-in-nearby-galaxy"><img typeof="foaf:Image" src="https://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/potw1840a.jpg?itok=5Y17qWwP" alt="bright cluster of stars in a crowded field" title="This glittering ball of stars is the globular cluster NGC 1898, which lies toward the center of the Large Magellanic Cloud." /></a>  </div>
+  <div class="home-features__item-inner">
+    <div class="home-features__item-type" style="color: #c52639;">Picture of the Day</div>
+    <div class="home-features__item-content">
+      <div class="home-features__item-body">
+        <span>This glittering ball of stars is the globular cluster NGC 1898, which lies toward the center of the Large Magellanic Cloud.</span>
+      </div>
+      <div class="home-features__item-link"><a href="https://www.nasa.gov/multimedia/imagegallery/iotd.html">See more</a></div>
+    </div>
+  </div>
+
+</div>
+
+                    <div class="home-features__item">
+    
+<div class="home-features__item-background">
+      
+<img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/thumbnails/image/whistle-waves-3.jpg" width="1013" height="548" alt="Illustration of Van Allen Radiation Belts surrounding earth" />  </div>
+<div class="home-features__item-inner">
+  <div class="home-features__item-type science-cat-text--" style="color: #9679d0">Latest Science News</div>
+  <div class="home-features__item-title">Exciting Chirping Whistler Waves: From the Laboratory to Space</div>
+  <div class="home-features__item-content">
+    <div class="home-features__item-body">
+              
+Chorus waves are a class of frequency-chirping, whistler-mode plasma waves that are routinely observed in Earth’s near-space environment. Chorus waves play a key role in various physical processes including the formation of the Earth’s Van Allen...          </div>
+    <div class="home-features__item-link">
+<a href="/technology/technology-stories/exciting-chirping-whistler-waves">Read Article</a></div>
+  </div>
+</div>
+
+  </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- <div class="l-home__row-head-section"> -->
+          <div class="l-home__row-item l-home__row-item--head">
+            <div class="l-home__row-item-container">
+                  <h3 class="l-home__row-item-title">NASA ScienceCasts</h3>
+<div class="home-sciencecasts">
+    <div class="home-sciencecasts__item">
+    <div class="home-sciencecasts__item-content">
+  <div class="home-sciencecasts__video">
+    <div class="field-content">
+<!-- scald=16710:full {"context":"use_the_default"} --><iframe title="NASA ScienceCasts: Sweating Can Be Cool" width="100%" height="100%" src="//www.youtube.com/embed/1BYyV8e4vq8" frameborder="0" allowfullscreen></iframe>
+<!-- END scald=16710 --></div>  </div>
+
+  <div class="home-sciencecasts__title">
+    <span class="field-content">
+<a href="/science-news/sciencecasts/sweating-can-be-cool">Sweating Can Be Cool</a></span>  </div>
+
+  <div class="home-sciencecasts__more-link">
+    <span class="field-content">
+<a href="/science-news">Watch More ScienceCasts &gt; </a></span>  </div>
+</div>
+  </div>
+</div>
+
+            </div>
+          </div>
+          <!-- <div class="l-home__row-head-section"> -->
+          <div class="l-home__row-item l-home__row-item--head">
+            <div class="l-home__row-item-container">
+                  <h3 class="l-home__row-item-title">@Dr_ThomasZ</h3>
+<div  style="margin-bottom: 20px;"><a class="twitter-timeline" data-chrome="noheader nofooter" data-dnt="true" data-height="300" data-width="500" href="https://twitter.com/Dr_ThomasZ">Tweets by Dr_ThomasZ</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="home-sciencecasts__more-link"><a href="https://twitter.com/Dr_ThomasZ">Tweets by Dr_ThomasZ</a></div>
+</div>
+
+            </div>
+          </div>
+          <a href="/latest-science-news" class="button button--transparent" style="margin-left: 10px;">More Science News</a>
+        </section>
+        <section class="l-home__row">
+            <!-- <div class="l-home__row-item"> -->
+<!-- <div class="l-home__row-item-container"> -->
+        <h2 class="l-home__section-title">Mission Countdown Clock</h2>
+      <div class="countdown-teasers">
+    <div class="countdown-teasers__item">
+  <div class="countdown-teasers__item-title">
+    <div class="field field--name-field-countdown-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">ICON Launch</div></div></div>  </div>
+  <div class="countdown-teasers__item-countdown">
+          <div class="field field--name-field-countdown-date field--type-field-countdown field--label-hidden"><div class="field__items"><div class="field__item even"><div id='field-countdown-timer-0-81725300-1540202457'>
+    </div><div style='display:none;' id='field-countdown-timer-note-0-81725300-1540202457'></div></div></div></div>      </div>
+  <div class="countdown-teasers__item-cta">
+    <a href="https://www.nasa.gov/icon" target="_blank">Learn More</a>
+  </div>
+</div>
+  <div class="countdown-teasers__item">
+  <div class="countdown-teasers__item-title">
+    <div class="field field--name-field-countdown-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Mars InSight Landing</div></div></div>  </div>
+  <div class="countdown-teasers__item-countdown">
+          <div class="field field--name-field-countdown-date field--type-field-countdown field--label-hidden"><div class="field__items"><div class="field__item even"><div id='field-countdown-timer-0-82054600-1540202457'>
+    </div><div style='display:none;' id='field-countdown-timer-note-0-82054600-1540202457'></div></div></div></div>      </div>
+  <div class="countdown-teasers__item-cta">
+    <a href="https://mars.nasa.gov/insight/" target="_blank">Learn More</a>
+  </div>
+</div>
+  <div class="countdown-teasers__item">
+  <div class="countdown-teasers__item-title">
+    <div class="field field--name-field-countdown-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">GEDI Launch</div></div></div>  </div>
+  <div class="countdown-teasers__item-countdown">
+          <div class="field field--name-field-countdown-date field--type-field-countdown field--label-hidden"><div class="field__items"><div class="field__item even"><div id='field-countdown-timer-0-82161500-1540202457'>
+    </div><div style='display:none;' id='field-countdown-timer-note-0-82161500-1540202457'></div></div></div></div>      </div>
+  <div class="countdown-teasers__item-cta">
+    <a href="https://gedi.umd.edu" target="_blank">Learn More</a>
+  </div>
+</div>
+</div>
+<!-- </div> -->
+<!-- </div> -->
+        </section>
+        <section class="l-home__row">
+            <!-- <div class="l-home__row-item"> -->
+<!-- <div class="l-home__row-item-container"> -->
+        <h2 class="l-home__section-title">Science By The Numbers</h2>
+      <div class="statistic-teaser__group">
+    <div class="statistic-teaser">
+  <div class="statistic-teaser__icon">
+          <div class="field field--name-field-statistic-icon field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/5a95a56b0f177000014a128f_Icon_Innovation.png" width="194" height="200" alt="" /></div></div></div>      </div>
+  <div class="statistic-teaser__title">
+    Technology Innovation  </div>
+  <div class="statistic-teaser__stat">
+    <span class="statistic-teaser__stat-value">
+              <div class="field field--name-field-statistic-value field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">$400M </div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat-label">
+              <div class="field field--name-field-statistic-label field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Invested Annually</div></div></div>          </span>
+  </div>
+  <div class="statistic-teaser__stat2">
+    <span class="statistic-teaser__stat2-value">
+          </span>
+    <span class="statistic-teaser__stat2-label">
+          </span>
+  </div>
+</div>
+  <div class="statistic-teaser">
+  <div class="statistic-teaser__icon">
+          <div class="field field--name-field-statistic-icon field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/5a8f3ef6716fbe00016b6a1d_Icon_Balloon.png" width="200" height="200" alt="" /></div></div></div>      </div>
+  <div class="statistic-teaser__title">
+    Balloons  </div>
+  <div class="statistic-teaser__stat">
+    <span class="statistic-teaser__stat-value">
+              <div class="field field--name-field-statistic-value field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">13 </div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat-label">
+              <div class="field field--name-field-statistic-label field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Science Payloads</div></div></div>          </span>
+  </div>
+  <div class="statistic-teaser__stat2">
+    <span class="statistic-teaser__stat2-value">
+              <div class="field field--name-field-statistic-value2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">12</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat2-label">
+              <div class="field field--name-field-statistic-label2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Student Experiments </div></div></div>          </span>
+  </div>
+</div>
+  <div class="statistic-teaser">
+  <div class="statistic-teaser__icon">
+          <div class="field field--name-field-statistic-icon field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/5a8f3ecd7e521a0001a8fceb_Icon_Research.png" width="137" height="200" alt="" /></div></div></div>      </div>
+  <div class="statistic-teaser__title">
+    Research   </div>
+  <div class="statistic-teaser__stat">
+    <span class="statistic-teaser__stat-value">
+              <div class="field field--name-field-statistic-value field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">10,000</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat-label">
+              <div class="field field--name-field-statistic-label field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">U.S. Scientists Funded</div></div></div>          </span>
+  </div>
+  <div class="statistic-teaser__stat2">
+    <span class="statistic-teaser__stat2-value">
+              <div class="field field--name-field-statistic-value2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">$600M</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat2-label">
+              <div class="field field--name-field-statistic-label2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Awarded Annually </div></div></div>          </span>
+  </div>
+</div>
+  <div class="statistic-teaser">
+  <div class="statistic-teaser__icon">
+          <div class="field field--name-field-statistic-icon field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/5a8f0b7ee36b4700018f07fb_Icon_Airplane.png" width="300" height="140" alt="" /></div></div></div>      </div>
+  <div class="statistic-teaser__title">
+    Earth-Based Investigations   </div>
+  <div class="statistic-teaser__stat">
+    <span class="statistic-teaser__stat-value">
+              <div class="field field--name-field-statistic-value field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">25</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat-label">
+              <div class="field field--name-field-statistic-label field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Major Airborne Missions</div></div></div>          </span>
+  </div>
+  <div class="statistic-teaser__stat2">
+    <span class="statistic-teaser__stat2-value">
+              <div class="field field--name-field-statistic-value2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">8</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat2-label">
+              <div class="field field--name-field-statistic-label2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Global Networks </div></div></div>          </span>
+  </div>
+</div>
+  <div class="statistic-teaser">
+  <div class="statistic-teaser__icon">
+          <div class="field field--name-field-statistic-icon field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/5a8f3eec7e521a0001a8fcfc_Icon_SoundingRocket.png" width="226" height="200" alt="" /></div></div></div>      </div>
+  <div class="statistic-teaser__title">
+    Sounding Rockets  </div>
+  <div class="statistic-teaser__stat">
+    <span class="statistic-teaser__stat-value">
+              <div class="field field--name-field-statistic-value field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">16</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat-label">
+              <div class="field field--name-field-statistic-label field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Science Missions</div></div></div>          </span>
+  </div>
+  <div class="statistic-teaser__stat2">
+    <span class="statistic-teaser__stat2-value">
+              <div class="field field--name-field-statistic-value2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">3</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat2-label">
+              <div class="field field--name-field-statistic-label2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Tech/Student Missions</div></div></div>          </span>
+  </div>
+</div>
+  <div class="statistic-teaser">
+  <div class="statistic-teaser__icon">
+          <div class="field field--name-field-statistic-icon field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/5a8f0b7ee36b4700018f0802_Icon_Cubesat.png" width="216" height="205" alt="" /></div></div></div>      </div>
+  <div class="statistic-teaser__title">
+    SMALLSATS/CUBESATS  </div>
+  <div class="statistic-teaser__stat">
+    <span class="statistic-teaser__stat-value">
+              <div class="field field--name-field-statistic-value field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">31</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat-label">
+              <div class="field field--name-field-statistic-label field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Science Missions </div></div></div>          </span>
+  </div>
+  <div class="statistic-teaser__stat2">
+    <span class="statistic-teaser__stat2-value">
+              <div class="field field--name-field-statistic-value2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">24</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat2-label">
+              <div class="field field--name-field-statistic-label2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Technology Demos</div></div></div>          </span>
+  </div>
+</div>
+  <div class="statistic-teaser">
+  <div class="statistic-teaser__icon">
+          <div class="field field--name-field-statistic-icon field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/5a8f0b7ee36b4700018f07bf_Icon_Satellite.png" width="300" height="181" alt="" /></div></div></div>      </div>
+  <div class="statistic-teaser__title">
+    Spacecraft  </div>
+  <div class="statistic-teaser__stat">
+    <span class="statistic-teaser__stat-value">
+              <div class="field field--name-field-statistic-value field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">105 </div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat-label">
+              <div class="field field--name-field-statistic-label field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Missions</div></div></div>          </span>
+  </div>
+  <div class="statistic-teaser__stat2">
+    <span class="statistic-teaser__stat2-value">
+              <div class="field field--name-field-statistic-value2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">85</div></div></div> 
+          </span>
+    <span class="statistic-teaser__stat2-label">
+              <div class="field field--name-field-statistic-label2 field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Spacecraft</div></div></div>          </span>
+  </div>
+</div>
+</div>
+<!-- </div> -->
+<!-- </div> -->
+        </section>
+        <section class="l-home__row">
+            <!-- <div class="l-home__row-item"> -->
+<!-- <div class="l-home__row-item-container"> -->
+        <h2 class="l-home__section-title">Helpful Links</h2>
+        <nav id="block-menu-menu-main-secondary" role="navigation" class="block block--menu secondary-menu contextual-links-region block--menu-menu-main-secondary">
+   <ul class="menu"><li class="first leaf universe"><a href="/astrophysics">Universe</a></li>
+<li class="leaf solar"><a href="/solar-system">Solar System</a></li>
+<li class="leaf sun"><a href="/heliophysics">Sun</a></li>
+<li class="leaf earth"><a href="/earth-science">Earth</a></li>
+<li class="leaf missions"><a href="/missions-page?field_division_tid=All&amp;field_phase_tid=All">Missions</a></li>
+<li class="last leaf science-tech"><a href="/technology">Science &amp; Technology</a></li>
+</ul></nav>
+<div class="helpful-link-teaser__group-container">
+      <div class="helpful-link-teaser__group">
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--sun">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">Sun</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="http://parkersolarprobe.jhuapl.edu/">Parker Solar Probe</a></div></div></div>  </div>
+</div>
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--earth">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">Earth</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://earthobservatory.nasa.gov/Topic/ImageoftheDay">Earth Observatory Image of the Day</a></div></div></div>  </div>
+</div>
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--all-science">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">All Science</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://science.nasa.gov/toolkits">NASA Science Toolkits</a></div></div></div>  </div>
+</div>
+          </div>
+      <div class="helpful-link-teaser__group">
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--universe">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">Universe</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://apod.nasa.gov/">Astronomy Picture of the Day</a></div></div></div>  </div>
+</div>
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--solar-system">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">Solar System</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://solarsystem.nasa.gov/">Solar System Website</a></div></div></div>  </div>
+</div>
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--all-science">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">All Science</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://www.nasa.gov/gravity-assist">Gravity Assist Podcast</a></div></div></div>  </div>
+</div>
+          </div>
+      <div class="helpful-link-teaser__group">
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--all-science">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">All Science</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://nasa3d.arc.nasa.gov/">NASA 3D Resources</a></div></div></div>  </div>
+</div>
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--all-science">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">All Science</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://ciencia.nasa.gov/">NASA Science in Spanish </a></div></div></div>  </div>
+</div>
+              <div class="helpful-link-teaser">
+  <div class="helpful-link-teaser__division">
+    <span class="division-text--all-science">
+      <div class="field field--name-field-helpful-link-division field--type-taxonomy-term-reference field--label-hidden"><div class="field__items"><div class="field__item even">All Science</div></div></div>    </span>
+  </div>
+  <div class="helpful-link-teaser__link">
+    <div class="field field--name-field-helpful-link-link field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://blogs.nasa.gov/drthomasz/">NASA Science Leader Blog</a></div></div></div>  </div>
+</div>
+          </div>
+  </div>
+<!-- </div> -->
+<!-- </div> -->
+        </section>
+        <section class="l-home__row">
+            <div id="block-views-home-slideshow-block" class="block block--views block--views-home-slideshow-block">
+        <div class="block__content">
+    <div class="view view-home-slideshow view-id-home_slideshow view-display-id-block view-dom-id-9f88edc8ade6c85546514a6a5f358fa5">
+        
+  
+  
+      <div class="view-content">
+      
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="7000" data-pause="hover">
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <div class="carousel-inner">
+                  <div class="item active">
+              <div class="home-slide-item">
+  <div class="home-slide-item__content">
+    <div class="home-slide-item__eyebrow">
+          </div>
+    <h3 class="home-slide-item__title">
+      NASA Science Activation     </h3>
+    <div class="home-slide-item__body">
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden"><div class="field__items"><div class="field__item even" property="content:encoded"><p>What is SMD’s Science Activation program? Science is best understood by doing, and NASA Science has a new team to help learners of all ages “do” science! 25 competitively-selected teams from across the Nation connect NASA science experts, real content, and experiences with community leaders to do science in ways that activate minds and promote understanding.&nbsp;This map shows the reach of the activities funded by the Science Activation efforts.</p>
+</div></div></div>    </div>
+      <a href="https://science.nasa.gov/learners" class="button home-slide-item__link">Learn More</a>
+  </div>
+  <div class="home-slide-item__image">
+    <div class="field field--name-field-master-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/styles/science_cast_hero_image/public/2018-10-03_13h54_07.png?itok=oKKSNgPU" alt="" /></div></div></div>  </div>
+</div>
+      </div>
+                  <div class="item">
+              <div class="home-slide-item">
+  <div class="home-slide-item__content">
+    <div class="home-slide-item__eyebrow">
+          </div>
+    <h3 class="home-slide-item__title">
+      NASA ICESat-2 Satellite    </h3>
+    <div class="home-slide-item__body">
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden"><div class="field__items"><div class="field__item even" property="content:encoded"><p>NASA’s ICESat-2 satellite uses split-second laser pulses to create 3D measurements of the height of Earth’s ice sheets and glaciers, sea ice thickness, and the height of vegetation in ecosystems worldwide.</p>
+</div></div></div>    </div>
+      <a href="https://icesat-2.gsfc.nasa.gov/" class="button home-slide-item__link">Learn More</a>
+  </div>
+  <div class="home-slide-item__image">
+    <div class="field field--name-field-master-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/styles/science_cast_hero_image/public/Icesat2-HQprint-1.jpg?itok=YK3x5IW7" alt="" /></div></div></div>  </div>
+</div>
+      </div>
+                  <div class="item">
+              <div class="home-slide-item">
+  <div class="home-slide-item__content">
+    <div class="home-slide-item__eyebrow">
+      <div class="field field--name-field-eyebrow field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">People</div></div></div>    </div>
+    <h3 class="home-slide-item__title">
+      Meet Tracy Drain, Spaceflight Systems Engineer    </h3>
+    <div class="home-slide-item__body">
+      <div class="field field--name-body field--type-text-with-summary field--label-hidden"><div class="field__items"><div class="field__item even" property="content:encoded"><p>Talk to Tracy Drain for any length of time, and the word “fun” peppers the conversation, even when discussing things most people don’t relish. Tests at school? “Oh, they were so much fun!” she exclaims with bright eyes and a smile.</p>
+</div></div></div>    </div>
+      <a href="https://solarsystem.nasa.gov/people/3063/tracy-drain" class="button home-slide-item__link">Read More</a>
+  </div>
+  <div class="home-slide-item__image">
+    <div class="field field--name-field-master-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://smd-prod.s3.amazonaws.com/science-pink/s3fs-public/styles/science_cast_hero_image/public/Tracy%20hugging%20bb8.jpg?itok=hUNyDbqo" alt="" /></div></div></div>  </div>
+</div>
+      </div>
+      </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <svg aria-hidden="true" data-prefix="far" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M4.2 247.5L151 99.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17L69.3 256l118.5 119.7c4.7 4.7 4.7 12.3 0 17L168 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 264.5c-4.7-4.7-4.7-12.3 0-17z"></path></svg>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <svg aria-hidden="true" data-prefix="far" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="site-footer" role="contentinfo">
+  <div class="site-footer__wrapper">
+    <!-- This should go in a block
+    <div class="site-footer__social">
+      <h2 class="site-footer__social-title">Stay Connected</h2>
+      <a href="#" class="site-footer__social-link"><img src="/sites/all/themes/custom/science_nasa/images/facebook_icon.png" /></a>
+      <a href="#" class="site-footer__social-link"><img src="/sites/all/themes/custom/science_nasa/images/twitter_icon.png" /></a>
+      <a href="#" class="site-footer__social-link"><img src="/sites/all/themes/custom/science_nasa/images/instagram_icon.png" /></a>
+    </div>
+    -->
+      <div class="l-region l-region--footer">
+    <div id="block-block-11" class="block block--block block--block-11">
+        <div class="block__content">
+    <div class="site-footer__social">
+<h2 class="site-footer__social-title">Stay Connected</h2>
+<a class="site-footer__social-link" href="https://www.facebook.com/NASA/"><img src="/sites/all/themes/custom/science_nasa/images/facebook_icon.png" /></a> <a class="site-footer__social-link" href="https://twitter.com/nasa"><img src="/sites/all/themes/custom/science_nasa/images/twitter_icon.png" /></a> <a class="site-footer__social-link" href="https://www.instagram.com/nasa/"><img src="/sites/all/themes/custom/science_nasa/images/instagram_icon.png" /></a></div>
+  </div>
+</div>
+  <div class="l-region l-region--blockgroup-newsletter-footer-group blockgroup">
+    <div id="block-nasa-subscribe-nasa-subscribe" class="block block--nasa-subscribe block--nasa-subscribe-nasa-subscribe">
+        <div class="block__content">
+      <div class="site-footer__newsletter">
+    <h3 class="site-footer__newsletter-title">Sign up for Our Newsletters</h3>
+    <form class="nasa-subscribe-form" action="/about-us/email-updates" method="post" id="nasa-subscribe-form" accept-charset="UTF-8" _lpchecked="1">
+      <input type="hidden" name="footer" value="1">
+        <div class="site-footer__newsletter-container">
+          <div class="form-type-textfield form-item-email site-footer__newsletter-input-container">
+            <label for="edit-email">Email <span class="form-required" title="This field is required.">*</span></label>
+            <input placeholder="Enter your email" id="edit-email" name="email" value="" size="20" maxlength="128" class="form-text required" type="text">
+          </div>
+          <div id="edit-newsletter-checkbox" class="form-checkboxes site-footer__newsletter-checkboxes">
+            <div class="form-item form-type-checkbox form-item-newsletter-checkbox-Science-at-NASA site-footer__newsletter-checkbox-wrapper">
+              <input id="edit-newsletter-checkbox-science-at-nasa" name="newsletter_checkbox[Science at NASA]" value="Science at NASA" class="form-checkbox" type="checkbox"> 
+              <label class="option site-footer__newsletter-checkbox-label" for="edit-newsletter-checkbox-science-at-nasa">Science at NASA </label>
+            </div>
+            <div class="form-item form-type-checkbox form-item-newsletter-checkbox-Ciencia-at-NASA-in-Espa&amp;ntilde;ol site-footer__newsletter-checkbox-wrapper">
+              <input id="edit-newsletter-checkbox-ciencia-at-nasa-in-espantildeol" name="newsletter_checkbox[Ciencia at NASA in Espa&amp;ntilde;ol]" value="Ciencia at NASA in Espa&amp;ntilde;ol" class="form-checkbox" type="checkbox"> 
+              <label class="option site-footer__newsletter-checkbox-label" for="edit-newsletter-checkbox-ciencia-at-nasa-in-espantildeol">Ciencia at NASA in Español </label>
+            </div>
+            <div class="form-item form-type-checkbox form-item-newsletter-checkbox-SARA-Mailing-List site-footer__newsletter-checkbox-wrapper">
+              <input id="edit-newsletter-checkbox-sara-mailing-list" name="newsletter_checkbox[SARA Mailing List]" value="SARA Mailing List" class="form-checkbox" type="checkbox"> 
+              <label class="option site-footer__newsletter-checkbox-label" for="edit-newsletter-checkbox-sara-mailing-list">SARA Mailing List </label>
+            </div>
+            <div class="form-item form-type-checkbox form-item-newsletter-checkbox-Science-WOW site-footer__newsletter-checkbox-wrapper">
+              <input id="edit-newsletter-checkbox-science-wow" name="newsletter_checkbox[Science WOW]" value="Science WOW" class="form-checkbox" type="checkbox">
+              <label class="option site-footer__newsletter-checkbox-label" for="edit-newsletter-checkbox-science-wow">Science WOW!</label>
+            </div>
+          </div>
+          <input id="edit-submit-button" name="op" value="Sign Up" class="form-submit ajax-processed site-footer__newsletter-subscribe" type="submit">
+        </div>
+      </div>
+    </form>
+  </div>  </div>
+</div>
+  </div>
+<nav id="block-menu-menu-footer-menu" role="navigation" class="block block--menu block--menu-menu-footer-menu">
+      
+  <ul class="menu"><li class="first expanded"><a href="/" class="active">Discover</a><ul class="menu"><li class="first leaf"><a href="/astrophysics">Universe</a></li>
+<li class="leaf"><a href="/solar-system">Solar System</a></li>
+<li class="leaf"><a href="/heliophysics">Sun</a></li>
+<li class="leaf"><a href="/earth-science">Earth</a></li>
+<li class="leaf"><a href="/missions-page">Missions</a></li>
+<li class="last leaf"><a href="/technology">Science &amp; Technology</a></li>
+</ul></li>
+<li class="expanded"><a href="/news-articles">Science News</a><ul class="menu"><li class="first leaf"><a href="/science-news">Science@NASA</a></li>
+<li class="last leaf"><a href="https://www.nasa.gov/content/science-mission-directorate-press-releases">Press Releases</a></li>
+</ul></li>
+<li class="expanded"><a href="/researchers">For Researchers</a><ul class="menu"><li class="first leaf"><a href="/researchers" title="Overview">Overview</a></li>
+<li class="leaf"><a href="/researchers/sara/faqs" title="FAQ">FAQ</a></li>
+<li class="leaf"><a href="/researchers/sara/grant-solicitations" title="Grant Funding">Grant Funding</a></li>
+<li class="leaf"><a href="/researchers/sara/letters-from-sara">Letters From SARA</a></li>
+<li class="leaf"><a href="/researchers/roses-blogs">ROSES Blog</a></li>
+<li class="leaf"><a href="/science-committee">NASA Advisory Council</a></li>
+<li class="leaf"><a href="/researchers/sara/program-officers-list" title="Our Team">Our Team</a></li>
+<li class="last leaf"><a href="https://www.nasa.gov/open/researchaccess" target="_blank">Data and Pubs Rules<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+</ul></li>
+<li class="expanded"><a href="/learners">Learners</a><ul class="menu"><li class="first leaf"><a href="/learners" title="Overview">Overview</a></li>
+<li class="leaf"><a href="/science-activation-team" title="Team">Team</a></li>
+<li class="leaf"><a href="/contact-science-activation" title="Hotline">Hotline</a></li>
+<li class="leaf"><a href="/learners/reach-map" title="Reach Map">Reach Map</a></li>
+<li class="leaf"><a href="/learners/sme-map">SME Map</a></li>
+<li class="leaf"><a href="/learners/learner-opportunities" title="Learner Opportunities ">Learner Opportunities </a></li>
+<li class="leaf"><a href="/learners/nuggets" title="Nuggets">Nuggets </a></li>
+<li class="last leaf"><a href="http://spaceplace.nasa.gov/" title="SpacePlace">SpacePlace<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+</ul></li>
+<li class="expanded"><a href="/get-involved">Get Involved</a><ul class="menu"><li class="first leaf"><a href="/citizenscientists">Citizen Scientists</a></li>
+<li class="leaf"><a href="/toolkits" title="Toolkits">Toolkits</a></li>
+<li class="leaf"><a href="/get-involved/inspiration" title="Inspiration ">Inspiration </a></li>
+<li class="leaf"><a href="https://www.nasa.gov/calendar">Upcoming Events<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+<li class="leaf"><a href="/about-us/email-updates">Email Sign Up</a></li>
+<li class="leaf"><a href="/get-involved/follow-us">Follow Us</a></li>
+<li class="last leaf"><a href="http://svs.gsfc.nasa.gov/cgi-bin/search.cgi?contentType=hw" target="_blank">Visual Presentations<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+</ul></li>
+<li class="last expanded"><a href="/about-us">About Us</a><ul class="menu"><li class="first leaf"><a href="/about-us">Overview</a></li>
+<li class="leaf"><a href="/about-us/leadership/bios">Science Leadership</a></li>
+<li class="leaf"><a href="http://solarsystem.nasa.gov/people">People<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+<li class="leaf"><a href="/about-us/science-strategy">Science Strategy</a></li>
+<li class="leaf"><a href="/about-us/communications">Communications </a></li>
+<li class="leaf"><a href="/about-us/contact-us">Contact Us</a></li>
+<li class="last leaf"><a href="/about-us/job-opportunities">Job Opportunities </a></li>
+</ul></li>
+</ul></nav>
+<div id="block-block-12" class="block block--block block--block-12">
+        <div class="block__content">
+    <style>
+.l-main .site-header__main-nav-header-item {
+  display: none;
+}
+
+.home-features {
+  height: 90%;
+}
+</style>  </div>
+</div>
+  </div>
+      <div class="l-region l-region--secondary-footer">
+    <nav id="block-menu-menu-footer-secondary-menu" role="navigation" class="block block--menu block--menu-menu-footer-secondary-menu">
+      
+  <ul class="menu"><li class="first leaf"><a href="https://www.nasa.gov">NASA.gov</a></li>
+<li class="leaf"><a href="http://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy</a></li>
+<li class="leaf"><a href="/about-us/contact-us">Contact Us</a></li>
+<li class="leaf"><a href="/glossary">Glossary</a></li>
+<li class="last leaf"><a href="https://ciencia.nasa.gov">Ciencia.nasa.gov </a></li>
+</ul></nav>
+  </div>
+    <div class="site-footer__official">
+      <p><strong>NASA Official:</strong> <a href="/about-us/contact-us">Dr. Mamta Patel Nagaraja</a></p>
+      <p><strong>Last updated:</strong> October 04, 2018</p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</div>
+                          <h1></h1>
+                                  
+<nav id="mmenu_left" class="mmenu-nav clearfix">
+  <ul>
+                                    <ul><li class="mmenu-block-wrap"><span><form class="views-exposed-form-es-connector-view-main-search" action="/search" method="get" id="views-exposed-form-es-connector-view-main-search" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-search-api-views-text-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-search-api-views-text">
+  <label class="element-invisible" for="edit-search-api-views-text">Ask a Question </label>
+ <input placeholder="Ask a Question" type="text" id="edit-search-api-views-text" name="search_api_views_text" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-es-connector-view" name="" value="Ask" class="form-submit" />    </div>
+      </div>
+</div>
+</div></form><ul class="mmenu-mm-list-level-1"><li class="mmenu-mm-list-mlid-1046 mmenu-mm-list-path-front"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Science Topics</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1054 mmenu-mm-list-path-node-1423"><a href="/astrophysics" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Universe</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1261 mmenu-mm-list-path-node-1423"><a href="/astrophysics" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a></li><li class="mmenu-mm-list-mlid-1060 mmenu-mm-list-path-node-3196"><a href="/astrophysics/focus-areas/what-is-dark-energy" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">What We Study</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1069 mmenu-mm-list-path-node-3196"><a href="/astrophysics/focus-areas/what-is-dark-energy" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Dark Energy, Dark Matter</span></a></li><li class="mmenu-mm-list-mlid-1072 mmenu-mm-list-path-node-1483"><a href="/astrophysics/focus-areas/black-holes" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Black Holes</span></a></li><li class="mmenu-mm-list-mlid-1068 mmenu-mm-list-path-node-2996"><a href="/astrophysics/focus-areas/what-powered-the-big-bang" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">The Big Bang</span></a></li><li class="mmenu-mm-list-mlid-1071 mmenu-mm-list-path-node-2212"><a href="/astrophysics/focus-areas/what-are-galaxies" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Galaxies</span></a></li><li class="mmenu-mm-list-mlid-1070 mmenu-mm-list-path-node-990"><a href="/astrophysics/focus-areas/how-do-stars-form-and-evolve" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Stars</span></a></li><li class="mmenu-mm-list-mlid-1067 mmenu-mm-list-path-https:--exoplanets.nasa.gov"><a href="https://exoplanets.nasa.gov" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Exoplanets</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1061 mmenu-mm-list-path-node-22"><a href="/astrophysics/programs" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Programs</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1073 mmenu-mm-list-path-node-1461"><a href="/astrophysics/programs/physics-of-the-cosmos" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Physics of the Cosmos</span></a></li><li class="mmenu-mm-list-mlid-1074 mmenu-mm-list-path-node-1450"><a href="/astrophysics/programs/cosmic-origins" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Cosmic Origins</span></a></li><li class="mmenu-mm-list-mlid-1075 mmenu-mm-list-path-node-2214"><a href="/astrophysics/programs/astrophysics-explorers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Astrophysics Explorers</span></a></li><li class="mmenu-mm-list-mlid-1076 mmenu-mm-list-path-node-3070"><a href="/astrophysics/programs/ExEP" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Exoplanet Exploration</span></a></li><li class="mmenu-mm-list-mlid-1077 mmenu-mm-list-path-node-3067"><a href="/astrophysics/programs/astrophysics-research" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Astrophysics Research</span></a></li><li class="mmenu-mm-list-mlid-1080 mmenu-mm-list-path-node-3096"><a href="/astrophysics/programs/astrophysics-division-technology" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Astrophysics Div Technology</span></a></li><li class="mmenu-mm-list-mlid-1078 mmenu-mm-list-path-http:--www.nsbf.nasa.gov-index.html"><a href="http://www.nsbf.nasa.gov/index.html" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">NASA Balloon Program</span></a></li><li class="mmenu-mm-list-mlid-1079 mmenu-mm-list-path-http:--rscience.gsfc.nasa.gov-index.html"><a href="http://rscience.gsfc.nasa.gov/index.html" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">NASA Sounding Rockets</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1062 mmenu-mm-list-path-missions-page"><a href="/missions-page" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Missions</span></a></li><li class="mmenu-mm-list-mlid-1063 mmenu-mm-list-path-node-1285"><a href="/astrophysics/big-questions" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Questions</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1081 mmenu-mm-list-path-node-1459"><a href="/astrophysics/big-questions/How-do-matter-energy-space-and-time-behave-under-the-extraordinarily-diverse-conditions-of-the-cosmos" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">How does the universe work?</span></a></li><li class="mmenu-mm-list-mlid-1082 mmenu-mm-list-path-node-3175"><a href="/astrophysics/big-questions/how-did-universe-originate-and-evolve-produce-galaxies-stars-and-planets-we-see-today" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">How did we get here?</span></a></li><li class="mmenu-mm-list-mlid-1083 mmenu-mm-list-path-node-3122"><a href="/astrophysics/big-questions/what-are-characteristics-planetary-systems-orbiting-other-stars-and-do-they-harbor-life" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Are we alone?</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1064 mmenu-mm-list-path-node-3133"><a href="/astrophysics/astrophysics-data-centers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Astro Data</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1728 mmenu-mm-list-path-node-1462"><a href="/astrophysics/astrophysics-data-centers/high-energy-astrophysics-science-archive-research-center-heasarc" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">HEASARC</span></a></li><li class="mmenu-mm-list-mlid-1729 mmenu-mm-list-path-node-3653"><a href="/astrophysics/astrophysics-data-centers/multimission-archive-at-stsci-mast" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">MAST</span></a></li><li class="mmenu-mm-list-mlid-1730 mmenu-mm-list-path-node-2729"><a href="/astrophysics/astrophysics-data-centers/nasa-exoplanet-science-institute-nexsci" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">NExScI</span></a></li><li class="mmenu-mm-list-mlid-1731 mmenu-mm-list-path-node-1472"><a href="/astrophysics/astrophysics-data-centers/nasa-ipac-extragalactic-database-ned" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">NED</span></a></li><li class="mmenu-mm-list-mlid-1732 mmenu-mm-list-path-node-1465"><a href="/astrophysics/astrophysics-data-centers/nasa-ipac-infrared-science-archive" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">IRSA</span></a></li><li class="mmenu-mm-list-mlid-1733 mmenu-mm-list-path-node-3147"><a href="/astrophysics/astrophysics-data-centers/set-of-identifications-measurements-and-bibliography-for-astronomical-data-simbad" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">SIMBAD</span></a></li><li class="mmenu-mm-list-mlid-1734 mmenu-mm-list-path-node-1466"><a href="/astrophysics/astrophysics-data-centers/smithsonian-nasa-astrophysics-data-system-ads" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">ADS</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1066 mmenu-mm-list-path-node-1438"><a href="/astrophysics/documents" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Documents</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1727 mmenu-mm-list-path-node-1050"><a href="/science-committee/subcommittees/nac-astrophysics-subcommittee/astrophysics-roadmap" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Astrophysics Roadmap</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-1055 mmenu-mm-list-path-node-6"><a href="/solar-system" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Solar System</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1262 mmenu-mm-list-path-node-6"><a href="/solar-system" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a></li><li class="mmenu-mm-list-mlid-1085 mmenu-mm-list-path-node-8"><a href="/solar-system/focus-areas" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">What We Study</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1088 mmenu-mm-list-path-node-11"><a href="/solar-system/focus-areas/inner-solar-system" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Inner Solar System</span></a></li><li class="mmenu-mm-list-mlid-1089 mmenu-mm-list-path-node-12"><a href="/solar-system/focus-areas/outer-solar-system" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Outer Solar System</span></a></li><li class="mmenu-mm-list-mlid-1090 mmenu-mm-list-path-node-13"><a href="/solar-system/focus-areas/small-bodies-solar-system" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Small Bodies of the Solar System</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1684 mmenu-mm-list-path-node-5937"><a href="/solar-system/programs" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Programs</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1712 mmenu-mm-list-path-node-3038"><a href="/solar-system/programs/discovery" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Discovery</span></a></li><li class="mmenu-mm-list-mlid-1713 mmenu-mm-list-path-node-1356"><a href="/solar-system/programs/mars-exploration" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Mars Exploration</span></a></li><li class="mmenu-mm-list-mlid-1714 mmenu-mm-list-path-node-3564"><a href="/solar-system/programs/new-frontiers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">New Frontiers</span></a></li><li class="mmenu-mm-list-mlid-1715 mmenu-mm-list-path-node-1329"><a href="/solar-system/programs/outer-planets-flagship" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Outer Planets Flagship</span></a></li><li class="mmenu-mm-list-mlid-1716 mmenu-mm-list-path-node-3222"><a href="/solar-system/programs/robotic-lunar-exploration" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Robotic Lunar Exploration</span></a></li><li class="mmenu-mm-list-mlid-1718 mmenu-mm-list-path-https:--sservi.nasa.gov-overview"><a href="https://sservi.nasa.gov/overview/" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">SSERVI</span></a></li><li class="mmenu-mm-list-mlid-1717 mmenu-mm-list-path-https:--www.nasa.gov-feature-nasa-selects-cubesat-smallsat-mission-concept-studies"><a href="https://www.nasa.gov/feature/nasa-selects-cubesat-smallsat-mission-concept-studies" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Small Sats</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1084 mmenu-mm-list-path-missions-page"><a href="/missions-page" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Missions</span></a></li><li class="mmenu-mm-list-mlid-1086 mmenu-mm-list-path-node-9"><a href="/solar-system/big-questions" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Questions</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1095 mmenu-mm-list-path-node-18"><a href="/horizons-system" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">HORIZONS System</span></a></li><li class="mmenu-mm-list-mlid-1091 mmenu-mm-list-path-node-14"><a href="/solar-system/big-questions/how-did-life-begin-and-evolve-earth-and-has-it-evolved-elsewhere-solar-system" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">How did life begin and evolve on Earth?</span></a></li><li class="mmenu-mm-list-mlid-1092 mmenu-mm-list-path-node-15"><a href="/solar-system/big-questions/how-did-solar-system-evolve-its-current-diverse-state" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">How did the solar system evolve?</span></a></li><li class="mmenu-mm-list-mlid-1093 mmenu-mm-list-path-node-16"><a href="/solar-system/big-questions/how-did-suns-family-planets-and-minor-bodies-originate" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">How did the sun's family originate?</span></a></li><li class="mmenu-mm-list-mlid-1096 mmenu-mm-list-path-node-19"><a href="/national-space-science-data-center" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">National Space Science Data Center</span></a></li><li class="mmenu-mm-list-mlid-1097 mmenu-mm-list-path-node-20"><a href="/planetary-data-system" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Planetary Data System</span></a></li><li class="mmenu-mm-list-mlid-1098 mmenu-mm-list-path-node-21"><a href="/regional-planetary-image-facilities" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Regional Planetary Image Facilities</span></a></li><li class="mmenu-mm-list-mlid-1094 mmenu-mm-list-path-node-17"><a href="/solar-system/big-questions/what-are-characteristics-solar-system-lead-origins-life" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">What are the characteristics of the Solar System?</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1725 mmenu-mm-list-path-node-7152"><a href="/solar-system/documents" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Documents</span></a></li><li class="mmenu-mm-list-mlid-1625 mmenu-mm-list-path-https:--pds.nasa.gov"><a href="https://pds.nasa.gov/" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Planetary Data</span></a></li><li class="mmenu-mm-list-mlid-1267 mmenu-mm-list-path-http:--solarsystem.nasa.gov"><a href="http://solarsystem.nasa.gov" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Solar System</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1056 mmenu-mm-list-path-node-4568"><a href="/heliophysics" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Sun</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1263 mmenu-mm-list-path-node-4568"><a href="/heliophysics" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1995 mmenu-mm-list-path-node-8051"><a href="/heliophysics/heliophysics-leadership" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Heliophysics Leadership</span></a></li><li class="mmenu-mm-list-mlid-1797 mmenu-mm-list-path-node-7325"><a href="/heliophysics/resources/heliophysics-org-chart" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Org Charts</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1099 mmenu-mm-list-path-node-4561"><a href="/heliophysics/focus-areas" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">What We Study</span></a></li><li class="mmenu-mm-list-mlid-1100 mmenu-mm-list-path-node-1471"><a href="/heliophysics/programs/research" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Programs</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1109 mmenu-mm-list-path-node-1471"><a href="/heliophysics/programs/research" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Heliophysics Research</span></a><ul class="mmenu-mm-list-level-5"><li class="mmenu-mm-list-mlid-1114 mmenu-mm-list-path-front"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Balloons</span></a></li><li class="mmenu-mm-list-mlid-1115 mmenu-mm-list-path-front"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">CubeSats</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1111 mmenu-mm-list-path-node-2717"><a href="/heliophysics/programs/solar-terrestrial-probes" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Solar Terrestrial Probes</span></a></li><li class="mmenu-mm-list-mlid-1112 mmenu-mm-list-path-node-3006"><a href="/heliophysics/programs/living-with-a-star" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Living with a Star</span></a></li><li class="mmenu-mm-list-mlid-1113 mmenu-mm-list-path-node-2662"><a href="/heliophysics/programs/sounding-rockets" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Sounding Rockets</span></a></li><li class="mmenu-mm-list-mlid-1581 mmenu-mm-list-path-node-5288"><a href="/heliophysics/programs/data-programs" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Data Programs</span></a></li><li class="mmenu-mm-list-mlid-1564 mmenu-mm-list-path-node-2610"><a href="/heliophysics/programs/working-groups" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Working Groups</span></a></li><li class="mmenu-mm-list-mlid-1578 mmenu-mm-list-path-node-5273"><a href="/node/5273" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">CCMC</span></a></li><li class="mmenu-mm-list-mlid-1579 mmenu-mm-list-path-node-5274"><a href="/node/5274" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">National Space Weather Program</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1101 mmenu-mm-list-path-missions-page"><a href="/missions-page" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Missions</span></a></li><li class="mmenu-mm-list-mlid-1102 mmenu-mm-list-path-node-2665"><a href="/heliophysics/big-questions" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Questions</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1116 mmenu-mm-list-path-node-4583"><a href="/heliophysics/big-questions/how-and-why-does-the-sun-vary-and-what-are-the-consequences" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">What causes the sun to vary?</span></a></li><li class="mmenu-mm-list-mlid-1117 mmenu-mm-list-path-node-4565"><a href="/heliophysics/big-questions/what-are-the-fundamental-physical-processes-of-the-space-environment" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">How do Earth, the planets, and the heliosphere respond?</span></a></li><li class="mmenu-mm-list-mlid-1118 mmenu-mm-list-path-node-4576"><a href="/heliophysics/big-questions/how-does-solar-variability-affect-human-society-technological-systems-and-the-habitability-of-planets" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">What are the impacts on humanity?</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1103 mmenu-mm-list-path-node-2652"><a href="/heliophysics/resources" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Resources</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1121 mmenu-mm-list-path-node-4570"><a href="/heliophysics/resources/senior-review" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Senior Reviews</span></a></li><li class="mmenu-mm-list-mlid-1580 mmenu-mm-list-path-node-5275"><a href="/heliophysics/resources/vocabulary" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Vocabulary</span></a></li><li class="mmenu-mm-list-mlid-1120 mmenu-mm-list-path-https:--smd-prod.s3.amazonaws.com-science-red-s3fs-public-atoms-files-2014_HelioRoadmap_Final_Reduced_0.pdf"><a href="https://smd-prod.s3.amazonaws.com/science-red/s3fs-public/atoms/files/2014_HelioRoadmap_Final_Reduced_0.pdf" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Roadmaps</span></a></li><li class="mmenu-mm-list-mlid-1805 mmenu-mm-list-path-node-7464"><a href="/heliophysics/resources/stdts" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">STDTs</span></a><ul class="mmenu-mm-list-level-5"><li class="mmenu-mm-list-mlid-1806 mmenu-mm-list-path-node-7465"><a href="/heliophysics/resources/stdts/geospace-dynamics-constellation" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Geospace Dynamics Constellation</span></a><ul class="mmenu-mm-list-level-6"><li class="mmenu-mm-list-mlid-1808 mmenu-mm-list-path-node-7467"><a href="/heliophysics/resources/stdts/geospace-dynamics-constellation/documents-and-reports" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Documents and Reports</span></a></li><li class="mmenu-mm-list-mlid-1807 mmenu-mm-list-path-node-7466"><a href="/heliophysics/resources/stdts/geospace-dynamics-constellation/membership" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Membership</span></a></li><li class="mmenu-mm-list-mlid-1809 mmenu-mm-list-path-node-7468"><a href="/heliophysics/resources/stdts/geospace-dynamics-constellation/public-comments" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Public Comments</span></a></li></ul></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-1696 mmenu-mm-list-path-node-6182"><a href="/heliophysics/helio-connects" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Helio Connects</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1708 mmenu-mm-list-path-node-6325"><a href="/heliophysics/helio-connects/newsletters" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Newsletters</span></a></li><li class="mmenu-mm-list-mlid-1709 mmenu-mm-list-path-node-6327"><a href="/heliophysics/helio-connects/events" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Events</span></a></li><li class="mmenu-mm-list-mlid-1694 mmenu-mm-list-path-node-6183"><a href="/heliophysics/helio-connects/science-and-technology-highlights" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science and Technology Highlights</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-1057 mmenu-mm-list-path-node-3985"><a href="/earth-science" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Earth</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1264 mmenu-mm-list-path-node-3985"><a href="/earth-science" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a></li><li class="mmenu-mm-list-mlid-1573 mmenu-mm-list-path-node-2684"><a href="/earth-science/focus-areas" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">What We Study</span></a></li><li class="mmenu-mm-list-mlid-1623 mmenu-mm-list-path-node-2743"><a href="/earth-science/programs" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Programs</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1624 mmenu-mm-list-path-node-3009"><a href="/earth-science/programs/goes-poes" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">GOES / POES</span></a></li><li class="mmenu-mm-list-mlid-1640 mmenu-mm-list-path-node-5484"><a href="/earth-science/programs/research-analysis" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Research and Analysis</span></a><ul class="mmenu-mm-list-level-5"><li class="mmenu-mm-list-mlid-1574 mmenu-mm-list-path-node-2645"><a href="/earth-science/focus-areas/atmospheric-composition" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Atmospheric Composition</span></a></li><li class="mmenu-mm-list-mlid-1146 mmenu-mm-list-path-node-1008"><a href="/earth-science/focus-areas/earth-weather" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Weather</span></a></li><li class="mmenu-mm-list-mlid-1130 mmenu-mm-list-path-node-2690"><a href="/earth-science/focus-areas/climate-variability-and-change" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Our Climate</span></a><ul class="mmenu-mm-list-level-6"><li class="mmenu-mm-list-mlid-1123 mmenu-mm-list-path-node-5277"><a href="/earth-science/focus-areas/oceanography" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Oceanography</span></a></li><li class="mmenu-mm-list-mlid-1143 mmenu-mm-list-path-node-2690"><a href="/earth-science/focus-areas/climate-variability-and-change" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Climate Variability & Change</span></a></li><li class="mmenu-mm-list-mlid-1145 mmenu-mm-list-path-node-1409"><a href="/earth-science/oceanography/ocean-earth-system/el-nino" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">El Niño</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1147 mmenu-mm-list-path-node-1280"><a href="/earth-science/focus-areas/water-and-energy-cycle" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Water & Energy Cycle</span></a></li><li class="mmenu-mm-list-mlid-1144 mmenu-mm-list-path-node-4597"><a href="/earth-science/focus-areas/carbon-cycle-and-ecosystems" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Carbon Cycle & Ecosystems</span></a></li><li class="mmenu-mm-list-mlid-1131 mmenu-mm-list-path-node-988"><a href="/earth-science/focus-areas/surface-and-interior" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Our Surface</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1149 mmenu-mm-list-path-node-2998"><a href="/earth-science/applied-sciences" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Applied Sciences</span></a></li><li class="mmenu-mm-list-mlid-1524 mmenu-mm-list-path-https:--essp.nasa.gov"><a href="https://essp.nasa.gov/" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Earth System Science Pathfinder</span></a><ul class="mmenu-mm-list-level-5"><li class="mmenu-mm-list-mlid-1526 mmenu-mm-list-path-node-3098"><a href="/about-us/smd-programs/earth-system-science-pathfinder/common-instrument-interface-workshop" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Common Instrument Interface</span></a><ul class="mmenu-mm-list-level-6"><li class="mmenu-mm-list-mlid-1531 mmenu-mm-list-path-node-1381"><a href="/about-us/smd-programs/earth-system-science-pathfinder/common-instrument-interface-workshop/cii-guidelines-working-meeting" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">CII Guidelines Working Meeting</span></a></li><li class="mmenu-mm-list-mlid-1528 mmenu-mm-list-path-node-3792"><a href="/about-us/smd-programs/earth-system-science-pathfinder/common-instrument-interface-workshop/cii-reference-documents" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">CII Reference Documents</span></a></li><li class="mmenu-mm-list-mlid-1529 mmenu-mm-list-path-node-1851"><a href="/about-us/smd-programs/earth-system-science-pathfinder/common-instrument-interface-workshop/cii-workshop-presentations" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">CII Workshop 1</span></a></li><li class="mmenu-mm-list-mlid-1530 mmenu-mm-list-path-node-3815"><a href="/about-us/smd-programs/earth-system-science-pathfinder/common-instrument-interface-workshop/cii-workshop-II" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">CII Workshop 2</span></a></li><li class="mmenu-mm-list-mlid-1656 mmenu-mm-list-path-node-5778"><a href="/about-us/smd-programs/earth-system-science-pathfinder/common-instrument-interface-workshop/cii-workshop-3" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">CII Workshop 3</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1527 mmenu-mm-list-path-node-3189"><a href="/about-us/smd-programs/earth-system-science-pathfinder/essp-library" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">ESSP Program Library</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1641 mmenu-mm-list-path-node-5485 external-link"><a href="/earth-science/programs/airborne-science" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Airborne Science</span></a></li><li class="mmenu-mm-list-mlid-1642 mmenu-mm-list-path-node-5486 external-link"><a href="/earth-science/programs/technology" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Technology</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1126 mmenu-mm-list-path-missions-page"><a href="/missions-page" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Missions</span></a></li><li class="mmenu-mm-list-mlid-1125 mmenu-mm-list-path-node-4499"><a href="/earth-science/big-questions" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Questions</span></a></li><li class="mmenu-mm-list-mlid-1639 mmenu-mm-list-path-node-5483"><a href="/earth-science/documents" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Documents</span></a></li><li class="mmenu-mm-list-mlid-1127 mmenu-mm-list-path-node-1430 external-link"><a href="/earth-science/oceanography/data-resources" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Earth Data</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1153 mmenu-mm-list-path-node-3125"><a href="/earth-science/climate-policy-speaker-series" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Climate Change Policy Speaker Series</span></a></li><li class="mmenu-mm-list-mlid-1152 mmenu-mm-list-path-node-2759"><a href="/earth-science/earth-science-data" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Earth Science Data</span></a></li><li class="mmenu-mm-list-mlid-1154 mmenu-mm-list-path-front"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Every Day is Earth Day</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1643 mmenu-mm-list-path-node-5494 external-link"><a href="/earth-science/global-challenges" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Global Challenges</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1156 mmenu-mm-list-path-missions-page"><a href="/missions-page" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Missions</span></a></li><li class="mmenu-mm-list-mlid-1059 mmenu-mm-list-path-node-3089"><a href="/technology" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science & Technology</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1265 mmenu-mm-list-path-node-3089"><a href="/technology" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a></li><li class="mmenu-mm-list-mlid-1157 mmenu-mm-list-path-node-4698"><a href="/technology/science-programs" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Programs</span></a></li><li class="mmenu-mm-list-mlid-1801 mmenu-mm-list-path-node-7428"><a href="/technology/2018-autonomy-workshop" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Autonomy Workshop</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1978 mmenu-mm-list-path-node-7799"><a href="/technology/2018-autonomy-workshop/agenda" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Agenda</span></a></li><li class="mmenu-mm-list-mlid-1980 mmenu-mm-list-path-node-7961"><a href="/technology/2018-autonomy-workshop/logistics" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Logistics</span></a></li><li class="mmenu-mm-list-mlid-1979 mmenu-mm-list-path-node-7960"><a href="/technology/2018-autonomy-workshop/hotels" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Hotel Information</span></a></li><li class="mmenu-mm-list-mlid-1997 mmenu-mm-list-path-node-8081"><a href="/technology/2018-autonomy-workshop/steering-committee" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Steering Committee</span></a></li><li class="mmenu-mm-list-mlid-1998 mmenu-mm-list-path-node-8082"><a href="/technology/2018-autonomy-workshop/speakers-panelists" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Speakers and Panelists</span></a></li><li class="mmenu-mm-list-mlid-2000 mmenu-mm-list-path-node-8090"><a href="/live-stream" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Live Stream</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1582 mmenu-mm-list-path-node-5290"><a href="/technology/technology-stories" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Technology Stories</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-1047 mmenu-mm-list-path-node-5366"><a href="/science-news" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science News</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1617 mmenu-mm-list-path-node-5366"><a href="/science-news" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science@NASA</span></a></li><li class="mmenu-mm-list-mlid-1160 mmenu-mm-list-path-https:--www.nasa.gov-content-science-mission-directorate-press-releases"><a href="https://www.nasa.gov/content/science-mission-directorate-press-releases" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Press Releases</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1049 mmenu-mm-list-path-node-3095"><a href="/researchers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">For Researchers</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1546 mmenu-mm-list-path-node-3095"><a href="/researchers" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a></li><li class="mmenu-mm-list-mlid-1183 mmenu-mm-list-path-node-3793"><a href="/researchers/sara/faqs" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">FAQ</span></a></li><li class="mmenu-mm-list-mlid-1768 mmenu-mm-list-path-node-3890"><a href="/researchers/sara/grant-solicitations" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Grant Funding</span></a></li><li class="mmenu-mm-list-mlid-1269 mmenu-mm-list-path-node-4701"><a href="/researchers/sara/letters-from-sara" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Letters From SARA</span></a></li><li class="mmenu-mm-list-mlid-1270 mmenu-mm-list-path-node-4702"><a href="/researchers/roses-blogs" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">ROSES Blog</span></a></li><li class="mmenu-mm-list-mlid-1165 mmenu-mm-list-path-node-2054"><a href="/science-committee" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">NAC Science Committee</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1770 mmenu-mm-list-path-node-2054"><a href="/science-committee" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a></li><li class="mmenu-mm-list-mlid-1187 mmenu-mm-list-path-node-3907"><a href="/science-committee/meetings" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Meetings</span></a></li><li class="mmenu-mm-list-mlid-1188 mmenu-mm-list-path-node-3004"><a href="/science-committee/members" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Members</span></a></li><li class="mmenu-mm-list-mlid-1673 mmenu-mm-list-path-node-5821"><a href="/researchers/nac/science-advisory-committees" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Advisory Committees</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1674 mmenu-mm-list-path-node-5822"><a href="/researchers/nac/science-advisory-committees/apac" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Astrophysics Advisory Committee</span></a></li><li class="mmenu-mm-list-mlid-1675 mmenu-mm-list-path-node-5823"><a href="/researchers/nac/science-advisory-committees/esac" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Earth Science Advisory Committee</span></a></li><li class="mmenu-mm-list-mlid-1676 mmenu-mm-list-path-node-5824"><a href="/researchers/nac/science-advisory-committees/hpac" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Heliophysics Advisory Committee</span></a></li><li class="mmenu-mm-list-mlid-1677 mmenu-mm-list-path-node-5825"><a href="/researchers/nac/science-advisory-committees/pac" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Planetary Science Advisory Committee</span></a></li><li class="mmenu-mm-list-mlid-1721 mmenu-mm-list-path-node-3997"><a href="/science-committee/subcommittees/nac-earth-science-subcommittee/advisory-groups" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Applied Sciences Advisory Committee (ASAC)</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1190 mmenu-mm-list-path-node-985"><a href="/science-committee/subcommittees" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Subcommittees</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1167 mmenu-mm-list-path-node-3099"><a href="/researchers/sara/program-officers-list" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Our Team</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1174 mmenu-mm-list-path-node-3099"><a href="/researchers/sara/program-officers-list" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Program Officers List</span></a></li><li class="mmenu-mm-list-mlid-1173 mmenu-mm-list-path-node-1448"><a href="/researchers/sara/advisory-committees" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Advisory Committees</span></a></li><li class="mmenu-mm-list-mlid-1186 mmenu-mm-list-path-node-3866"><a href="/researchers/volunteer-review-panels" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Volunteer for Review Panels</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1629 mmenu-mm-list-path-https:--www.nasa.gov-open-researchaccess"><a href="https://www.nasa.gov/open/researchaccess" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Data & Pubs Rules</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1053 mmenu-mm-list-path-node-1052"><a href="/learners" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Learners</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1210 mmenu-mm-list-path-node-1052"><a href="/learners" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a></li><li class="mmenu-mm-list-mlid-1697 mmenu-mm-list-path-stem-activation-team"><a href="/stem-activation-team" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Team</span></a></li><li class="mmenu-mm-list-mlid-1274 mmenu-mm-list-path-node-4727"><a href="/learners/reach-map" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Reach Map</span></a></li><li class="mmenu-mm-list-mlid-2040 mmenu-mm-list-path-front site-header__main-nav-header-item"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Resources</span></a></li><li class="mmenu-mm-list-mlid-1722 mmenu-mm-list-path-node-6579"><a href="/contact-science-activation" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Hotline</span></a></li><li class="mmenu-mm-list-mlid-1977 mmenu-mm-list-path-node-7967"><a href="/learners/sme-map" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">SME Map</span></a></li><li class="mmenu-mm-list-mlid-1278 mmenu-mm-list-path-node-2771"><a href="/learners/learner-opportunities" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Learner Opportunities</span></a></li><li class="mmenu-mm-list-mlid-1651 mmenu-mm-list-path-node-5480"><a href="/learners/nuggets" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Nuggets</span></a></li><li class="mmenu-mm-list-mlid-1212 mmenu-mm-list-path-http:--spaceplace.nasa.gov"><a href="http://spaceplace.nasa.gov/" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Space Place</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1756 mmenu-mm-list-path-node-4728"><a href="/get-involved" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Get Involved</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1408 mmenu-mm-list-path-citizenscientists"><a href="/citizenscientists" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Citizen Scientists</span></a></li><li class="mmenu-mm-list-mlid-1759 mmenu-mm-list-path-node-6161"><a href="/get-involved/inspiration" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Inspiration</span></a></li><li class="mmenu-mm-list-mlid-1760 mmenu-mm-list-path-https:--www.nasa.gov-calendar"><a href="https://www.nasa.gov/calendar/" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Upcoming Events</span></a></li><li class="mmenu-mm-list-mlid-2041 mmenu-mm-list-path-front site-header__main-nav-header-item"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Connect</span></a></li><li class="mmenu-mm-list-mlid-1761 mmenu-mm-list-path-node-2762"><a href="/about-us/email-updates" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Email Sign Up</span></a></li><li class="mmenu-mm-list-mlid-1762 mmenu-mm-list-path-node-994"><a href="/get-involved/follow-us" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Follow Us</span></a></li><li class="mmenu-mm-list-mlid-2042 mmenu-mm-list-path-front site-header__main-nav-header-item"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Resources</span></a></li><li class="mmenu-mm-list-mlid-1758 mmenu-mm-list-path-toolkits"><a href="/toolkits" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Toolkits</span></a></li><li class="mmenu-mm-list-mlid-1765 mmenu-mm-list-path-https:--svs.gsfc.nasa.gov-cgi-bin-search.cgi?contentType=hw"><a href="https://svs.gsfc.nasa.gov/cgi-bin/search.cgi?contentType=hw" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Visual Presentations </span></a></li></ul></li><li class="mmenu-mm-list-mlid-1051 mmenu-mm-list-path-node-3195"><a href="/about-us" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">About Us</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-1532 mmenu-mm-list-path-node-3195"><a href="/about-us" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Overview</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1767 mmenu-mm-list-path-node-5363"><a href="/about-us/smd-vision" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Mission Directorate</span></a></li></ul></li><li class="mmenu-mm-list-mlid-1410 mmenu-mm-list-path-node-1001"><a href="/about-us/leadership/bios" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Leadership</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1523 mmenu-mm-list-path-node-1001"><a href="/about-us/leadership/bios" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Leadership</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1999 mmenu-mm-list-path-node-1001"><a href="/about-us/leadership/bios" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Leadership Team</span></a></li><li class="mmenu-mm-list-mlid-1522 mmenu-mm-list-path-node-5090"><a href="/about-us/leadership/org-chart" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">SMD Organization Chart</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-2055 mmenu-mm-list-path-https:--solarsystem.nasa.gov-people- "><a href="https://solarsystem.nasa.gov/people/ " class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">People</span></a></li><li class="mmenu-mm-list-mlid-2125 mmenu-mm-list-path-front site-header__main-nav-header-item"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Resources</span></a></li><li class="mmenu-mm-list-mlid-1194 mmenu-mm-list-path-node-1049"><a href="/about-us/science-strategy" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Strategy</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-1516 mmenu-mm-list-path-node-1049"><a href="/about-us/science-strategy" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Science Strategy</span></a></li><li class="mmenu-mm-list-mlid-1202 mmenu-mm-list-path-node-3063"><a href="/about-us/science-strategy/decadal-surveys" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Decadal Surveys</span></a></li><li class="mmenu-mm-list-mlid-1203 mmenu-mm-list-path-node-1363"><a href="/about-us/science-strategy/accomplishments" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Year in Review</span></a><ul class="mmenu-mm-list-level-4"><li class="mmenu-mm-list-mlid-1655 mmenu-mm-list-path-node-5757"><a href="/about-us/science-strategy/accomplishments/2015" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2015</span></a></li><li class="mmenu-mm-list-mlid-1602 mmenu-mm-list-path-node-5343"><a href="/about-us/science-strategy/accomplishments/2014" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2014</span></a></li><li class="mmenu-mm-list-mlid-1603 mmenu-mm-list-path-node-5342"><a href="/about-us/science-strategy/accomplishments/2013" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2013</span></a></li><li class="mmenu-mm-list-mlid-1604 mmenu-mm-list-path-node-5355"><a href="/about-us/science-strategy/accomplishments/2012" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2012</span></a></li><li class="mmenu-mm-list-mlid-1605 mmenu-mm-list-path-node-5356"><a href="/about-us/science-strategy/accomplishments/2011" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2011</span></a></li><li class="mmenu-mm-list-mlid-1606 mmenu-mm-list-path-node-5357"><a href="/about-us/science-strategy/accomplishments/2010" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2010</span></a></li><li class="mmenu-mm-list-mlid-1607 mmenu-mm-list-path-node-5358"><a href="/about-us/science-strategy/accomplishments/2008" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2008</span></a></li><li class="mmenu-mm-list-mlid-1608 mmenu-mm-list-path-node-5359"><a href="/about-us/science-strategy/accomplishments/2007" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2007</span></a></li><li class="mmenu-mm-list-mlid-1609 mmenu-mm-list-path-node-5360"><a href="/about-us/science-strategy/accomplishments/2006" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2006</span></a></li><li class="mmenu-mm-list-mlid-1610 mmenu-mm-list-path-node-5361"><a href="/about-us/science-strategy/accomplishments/2005" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2005</span></a></li><li class="mmenu-mm-list-mlid-1611 mmenu-mm-list-path-node-5362"><a href="/about-us/science-strategy/accomplishments/2004" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">2004</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-1711 mmenu-mm-list-path-node-2713"><a href="/about-us/job-opportunities" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Job Opportunities</span></a></li><li class="mmenu-mm-list-mlid-2124 mmenu-mm-list-path-front site-header__main-nav-header-item"><a href="/" class="mmenu-mm-list "><i class="icon-home"></i><span class="mmenu-block-title">Connect</span></a></li><li class="mmenu-mm-list-mlid-1593 mmenu-mm-list-path-node-5316"><a href="/about-us/communications" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Communications</span></a></li><li class="mmenu-mm-list-mlid-1370 mmenu-mm-list-path-node-4917"><a href="/about-us/contact-us" class="mmenu-mm-list "><i class="icon-list2"></i><span class="mmenu-block-title">Contact Us</span></a></li></ul></li></ul></span></li></ul>
+                    </ul>
+</nav>
+<script src="https://science.nasa.gov/sites/all/libraries/jquery-countdown/assets/countdown/jquery.countdown.js?pgrfwv"></script>
+<script src="https://science.nasa.gov/sites/all/modules/contrib/field_countdown/field_countdown.js?pgrfwv"></script>
+      <script language="javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&yt=true&dclink=true"></script>
+      <script type="text/javascript">
+        setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0];
+        a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0068/7565.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      </script>
+  </body>
+</html>
