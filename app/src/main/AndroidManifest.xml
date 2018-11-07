@@ -25,7 +25,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".signup" />
         <activity android:name=".CameraGalleryActivity" />
-        <activity android:name=".Products"></activity>
+        <activity android:name=".Products" />
+        <activity android:name=".FireActivity"></activity>
     </application>
 
 </manifest>
