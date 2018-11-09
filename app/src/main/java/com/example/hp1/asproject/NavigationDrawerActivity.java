@@ -83,7 +83,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            Intent i = new Intent(this, CameraGalleryActivity.class);
+            Intent i = new Intent(this, FireActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_gallery) {
 
