@@ -22,12 +22,7 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         LvCountries = (ListView) findViewById(R.id.LvCountries) ;
-        arrayList.add(new Item(R.drawable.mainback,"Biography"));
-        LvCountries = findViewById(R.id.ILVcountries);
-        arrayList.add(new Item(R.drawable.biography,"Biography"));
-        arrayList.add(new Item(R.drawable.action,"action"));
-        arrayList.add(new Item(R.drawable.crime,"crime"));
-        arrayList.add(new Item(R.drawable.drama,"drama"));
+
         arrayList.add(new Item(R.drawable.sceince,"Sceince"));
         arrayList.add(new Item(R.drawable.sports,"Sports"));
         arrayList.add(new Item(R.drawable.photography,"Photography"));

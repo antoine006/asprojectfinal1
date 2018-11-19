@@ -27,6 +27,6 @@
         android:id="@+id/cameraImageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/sports" />
+        app:srcCompat="@drawable/photography" />
 
 </LinearLayout>

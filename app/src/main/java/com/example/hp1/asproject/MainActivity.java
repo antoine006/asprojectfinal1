@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
         arrayList.add(new Item(R.drawable.action, "Action"));
         arrayList.add(new Item(R.drawable.biography, "Biorgraphy"));
+        arrayList.add(new Item(R.drawable.sports, "Sports"));
+        arrayList.add(new Item(R.drawable.history, "History"));
+        arrayList.add(new Item(R.drawable.buisness, "Buisness"));
+
+
+
 
         for(int i = 0; i< arrayList.size() ; i++){
             View view = inflater.inflate(R.layout.horiz_item, gallery, false);

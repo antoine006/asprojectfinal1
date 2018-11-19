@@ -5,6 +5,9 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:title="main"
+            android:id=@id/"Main" />
+        <item
             android:id="@+id/Sign_up"
             android:icon="@drawable/ic_menu_camera"
             android:title="Import" />
