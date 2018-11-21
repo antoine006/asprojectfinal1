@@ -5,24 +5,24 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:title="main"
-            android:id=@id/"Main" />
+            android:id="@+id/Main"
+            android:title="main"/>
         <item
             android:id="@+id/Sign_up"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="sign up" />
         <item
             android:id="@+id/Sign_in"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="sign in" />
         <item
             android:id="@+id/Cart"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="cart" />
         <item
             android:id="@+id/Top_10"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="top 10" />
     </group>
 
 

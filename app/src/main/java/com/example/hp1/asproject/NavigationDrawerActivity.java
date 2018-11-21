@@ -16,15 +16,17 @@ import android.view.MenuItem;
 public class NavigationDrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    DrawerLayout drawer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -33,9 +35,10 @@ public class NavigationDrawerActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        if(savedInstanceState == null) {
-            NavigationView navigationView1= (NavigationView) findViewById(R.id.nav_view);
-            navigationView1.setNavigationItemSelectedListener(this);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new FragmentMain()).commit();
+            navigationView.setCheckedItem(R.id.Main);
 
         }
     }
@@ -76,21 +79,30 @@ public class NavigationDrawerActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
+        switch (item.getItemId()) {
 
-        if (id == R.id.Sign_up) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new SignupFragment()).commit();
-        } else if (id == R.id.Sign_in) {
+            case R.id.Main:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FragmentMain()).commit();
+                break;
 
-        } else if (id == R.id.Cart) {
+            case R.id.Sign_up:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SignupFragment()).commit();
+                break;
 
-        } else if (id == R.id.Top_10) {
+            case R.id.Sign_in:
 
+                break;
 
+            case R.id.Cart:
+
+                break;
+
+            case R.id.Top_10:
+
+                break;
         }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
