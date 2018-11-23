@@ -26,7 +26,14 @@
         <activity android:name=".signup" />
         <activity android:name=".CameraGalleryActivity" />
         <activity android:name=".Products" />
-        <activity android:name=".FireActivity"></activity>
+        <activity android:name=".FireActivity" />
+        <activity android:name=".sharedactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
