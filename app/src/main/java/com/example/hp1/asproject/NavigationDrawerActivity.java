@@ -1,8 +1,11 @@
 package com.example.hp1.asproject;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -35,12 +38,12 @@ public class NavigationDrawerActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new FragmentMain()).commit();
-            navigationView.setCheckedItem(R.id.Main);
-
-        }
+//        if (savedInstanceState == null) {
+//            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                    new FragmentMain()).commit();
+//            navigationView.setCheckedItem(R.id.Main);
+//
+//        }
     }
 
     @Override
@@ -49,7 +52,27 @@ public class NavigationDrawerActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Are you sure");
+            builder.setCancelable(true);
+            builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    NavigationDrawerActivity.super.onBackPressed();
+                }
+            });
+
+            builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+
+            AlertDialog dialog=builder.create();
+
+            dialog.show();
         }
     }
 
@@ -65,14 +88,15 @@ public class NavigationDrawerActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        Intent goToNextActivity;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()){
+            case R.id.about:
+                goToNextActivity = new Intent(getApplicationContext(),AboutActivity.class);
+                startActivity(goToNextActivity);
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -82,17 +106,20 @@ public class NavigationDrawerActivity extends AppCompatActivity
         switch (item.getItemId()) {
 
             case R.id.Main:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new FragmentMain()).commit();
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                        new FragmentMain()).commit();
+                Intent mainPage = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(mainPage);
                 break;
 
             case R.id.Sign_up:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new SignupFragment()).commit();
+                Intent signUpPage = new Intent(getApplicationContext(), signup.class);
+                startActivity(signUpPage);
                 break;
 
             case R.id.Sign_in:
-
+                Intent signInPage = new Intent(getApplicationContext(), signin.class);
+                startActivity(signInPage);
                 break;
 
             case R.id.Cart:
