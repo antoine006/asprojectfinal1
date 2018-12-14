@@ -45,7 +45,7 @@ public class signup extends AppCompatActivity implements View.OnClickListener{
         btsignup   = findViewById(R.id.btsignup);
         btsignup.setOnClickListener(this);
 
-        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance(); //conects betwwen the firebase and the project
 
     }
     public void openActivity2(){
@@ -58,12 +58,13 @@ public class signup extends AppCompatActivity implements View.OnClickListener{
         //updateUI(currentUser);
     }
     public void createUser(String email,String password){
-        mAuth.createUserWithEmailAndPassword(email, password)
+        mAuth.createUserWithEmailAndPassword(email, password)  //Tries to create a new user account with the given email address and password.
+                                                            // If successful, it also signs the user in into the app
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+                            // Sign up success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             Intent intent=new Intent(signup.this,Main2Activity.class);
@@ -88,7 +89,7 @@ public class signup extends AppCompatActivity implements View.OnClickListener{
             String user = etuser.getText().toString();
             String password = etpass.getText().toString();
             if(user.equals("") || password.equals("") ){
-
+            Toast.makeText(signup.this,"Username or Password is empty",Toast.LENGTH_SHORT).show();
             }else{
                 createUser(user,password);
             }

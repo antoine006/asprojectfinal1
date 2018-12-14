@@ -12,7 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class Main2Activity extends AppCompatActivity implements AdapterView.OnItemClickListener{
-    ListView LvCountries;
+    ListView Lvmovies;
     CustomAdapter arrayAdapter;
     ArrayList<Item> arrayList = new ArrayList<>();
 
@@ -21,14 +21,14 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        LvCountries = (ListView) findViewById(R.id.LvCountries) ;
+        Lvmovies = (ListView) findViewById(R.id.Lvmovies) ;
 
-        arrayList.add(new Item(R.drawable.sceince,"Sceince"));
+
         arrayList.add(new Item(R.drawable.sports,"Sports"));
         arrayList.add(new Item(R.drawable.photography,"Photography"));
         arrayAdapter = new CustomAdapter(this,R.layout.custom_row,arrayList);
-        LvCountries.setAdapter(arrayAdapter);
-        LvCountries.setOnItemClickListener(this);
+        Lvmovies.setAdapter(arrayAdapter);
+        Lvmovies.setOnItemClickListener(this);
     }
 
     @Override
