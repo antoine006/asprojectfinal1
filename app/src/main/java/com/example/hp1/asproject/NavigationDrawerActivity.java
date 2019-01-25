@@ -122,7 +122,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
                 startActivity(signInPage);
                 break;
 
-            case R.id.Cart:
+            case R.id.WishList:
 
                 break;
 

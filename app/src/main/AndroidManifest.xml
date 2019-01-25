@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AlertDialogActivity" />
-        <activity android:name=".BookListActivity" />
+        <activity android:name=".MoviesListActivity" />
         <activity android:name=".signin" />
         <activity android:name=".MainActivity" />
         <activity android:name=".signup" />
@@ -32,7 +32,7 @@
         <activity android:name=".sharedactivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".AboutActivity" />
-
+        <activity android:name=".WishlistActivity"></activity>
     </application>
 
 </manifest>

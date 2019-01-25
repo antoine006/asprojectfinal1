@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -34,7 +32,7 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long ld) {
         //  String selectedItem = arrayList.get(position);
-        Intent i = new Intent(this, BookListActivity.class);
+        Intent i = new Intent(this, MoviesListActivity.class);
         if(position==0){
             i.putExtra("Category","Biography" );
         }else if(position ==1 ){
