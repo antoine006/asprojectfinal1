@@ -24,6 +24,10 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
 
         arrayList.add(new Item(R.drawable.sports,"Sports"));
         arrayList.add(new Item(R.drawable.photography,"Photography"));
+        arrayList.add(new Item(R.drawable.biography,"Biography"));
+        arrayList.add(new Item(R.drawable.history,"History"));
+        arrayList.add(new Item(R.drawable.action,"action"));
+
         arrayAdapter = new CustomAdapter(this,R.layout.custom_row,arrayList);
         Lvmovies.setAdapter(arrayAdapter);
         Lvmovies.setOnItemClickListener(this);
@@ -34,20 +38,16 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
         //  String selectedItem = arrayList.get(position);
         Intent i = new Intent(this, MoviesListActivity.class);
         if(position==0){
-            i.putExtra("Category","Biography" );
+            i.putExtra("Category","sports" );
         }else if(position ==1 ){
-            i.putExtra("Category","Business and Finance" );
+            i.putExtra("Category","photography" );
         }else if(position==2){
-            i.putExtra("Category","Fiction" );
+            i.putExtra("Category","biography" );
         }else if(position==3){
             i.putExtra("Category","History" );
         }
         else if (position==4){
-            i.putExtra("Category","Sceince" );
-        }else if (position==5){
-            i.putExtra("Category","Sports" );
-        }else if (position==6){
-            i.putExtra("Category","Photography" );
+            i.putExtra("Category","action");
         }
         startActivity(i);
     }
