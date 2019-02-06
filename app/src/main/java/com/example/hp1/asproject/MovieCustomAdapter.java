@@ -23,8 +23,6 @@ private Context mContext;
         this.mContext = context;
     }
 
-    @NonNull
-    @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View v = convertView;
 
@@ -38,7 +36,7 @@ private Context mContext;
             ImageView imageView=(ImageView)v.findViewById(R.id.imageview);
             imageView.setImageResource(p.getImage());
 
-            Button btAdd =v.findViewById(R.id.btAddToWishList);
+          Button btAdd =v.findViewById(R.id.btAddToWishList);
             btAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

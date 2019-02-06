@@ -14,10 +14,14 @@ public class MoviesListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MovieCustomAdapter adapter = new MovieCustomAdapter(this, R.layout.movie_custom_row, arrayList);
-        lvmovies.setAdapter(adapter);
         setContentView(R.layout.activity_movie_list);
+        
         lvmovies = findViewById(R.id.lvMovies);
+
+        MovieCustomAdapter adapter = new MovieCustomAdapter(this, R.layout.movie_custom_row, arrayList);
+
+        lvmovies.setAdapter(adapter);
+
         String Category = getIntent().getStringExtra("Category");
 
         Toast.makeText(this, Category, Toast.LENGTH_SHORT).show();
