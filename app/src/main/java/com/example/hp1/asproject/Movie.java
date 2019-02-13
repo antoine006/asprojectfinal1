@@ -13,6 +13,7 @@ public class Movie {
         this.mname=mname;
         this.rating=rating;
         this.summary=summary;
+        this.image= image;
         this.wighlist=false;
     }
 
