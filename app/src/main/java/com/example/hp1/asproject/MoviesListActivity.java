@@ -42,7 +42,7 @@ public class MoviesListActivity extends AppCompatActivity {
             arrayList.add(new Movie("troy", 4.5, R.drawable.troy, "this is the summary"));
             arrayList.add(new Movie("walkiria", 4.5, R.drawable.walkiria, "this is the summary"));
         }
-        if (Category.equals("History")) {
+        if (Category.equals("action")) {
             arrayList.add(new Movie("sky fall", 4.5, R.drawable.skyfall, "this is the summary"));
             arrayList.add(new Movie("spectre", 4.5, R.drawable.spectre, "this is the summary"));
 
