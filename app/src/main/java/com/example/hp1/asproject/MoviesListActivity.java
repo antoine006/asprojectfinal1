@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public class MoviesListActivity extends AppCompatActivity {
     ArrayList<Movie> arrayList = new ArrayList<>();
     ListView lvmovies;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,5 +46,6 @@ public class MoviesListActivity extends AppCompatActivity {
             arrayList.add(new Movie("spectre", 4.5, R.drawable.spectre, "this is the summary"));
 
         }
+
     }
 }
