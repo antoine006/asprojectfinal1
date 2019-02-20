@@ -33,7 +33,16 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".WishlistActivity" />
-        <activity android:name=".moviedetails"></activity>
+        <activity android:name=".moviedetails" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".MyIntentService"
+            android:exported="false"></service>
     </application>
 
 </manifest>

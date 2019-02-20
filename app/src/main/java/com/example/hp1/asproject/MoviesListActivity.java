@@ -2,24 +2,29 @@ package com.example.hp1.asproject;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
 public class MoviesListActivity extends AppCompatActivity {
     ArrayList<Movie> arrayList = new ArrayList<>();
     ListView lvmovies;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_list);
-        
-        lvmovies = findViewById(R.id.lvMovies);
 
-        MovieCustomAdapter adapter = new MovieCustomAdapter(this, R.layout.movie_custom_row, arrayList);
-
-        lvmovies.setAdapter(adapter);
 
         String Category = getIntent().getStringExtra("Category");
 
@@ -46,6 +51,12 @@ public class MoviesListActivity extends AppCompatActivity {
             arrayList.add(new Movie("spectre", 4.5, R.drawable.spectre, "this is the summary"));
 
         }
+        lvmovies = findViewById(R.id.lvMovies);
+
+        MovieCustomAdapter adapter = new MovieCustomAdapter(this, R.layout.movie_custom_row, arrayList);
+
+        lvmovies.setAdapter(adapter);
 
     }
+
 }

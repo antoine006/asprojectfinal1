@@ -1,5 +1,9 @@
 package com.example.hp1.asproject;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,6 +16,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final int NOTIFICATION_REMINDER_NIGHT = 3;
     ArrayList<Item> arrayList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(arrayList.get(i).getImage());
 
             gallery.addView(view);
+
+            Intent notifyIntent = new Intent(this,MyReceiver.class);
+            PendingIntent pendingIntent = PendingIntent.getBroadcast
+                    (this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+            AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,  System.currentTimeMillis(),
+                    1000 * 60 * 60 * 24, pendingIntent);
+
         }
     }
 }
