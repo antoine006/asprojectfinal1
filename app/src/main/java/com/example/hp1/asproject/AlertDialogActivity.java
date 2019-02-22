@@ -8,10 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.hp1.asproject.MainActivity;
-import com.example.hp1.asproject.R;
-import com.google.android.gms.signin.SignIn;
-
 public class AlertDialogActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
 
     @Override
@@ -33,7 +29,7 @@ public class AlertDialogActivity extends AppCompatActivity implements DialogInte
         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent i = new Intent(AlertDialogActivity.this, SignIn.class);
+                Intent i = new Intent(AlertDialogActivity.this, signin.class);
                 startActivity(i);
             }
         });

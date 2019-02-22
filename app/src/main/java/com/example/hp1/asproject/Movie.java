@@ -2,7 +2,9 @@ package com.example.hp1.asproject;
 
 import android.support.annotation.NonNull;
 
-public class Movie {
+import java.io.Serializable;
+
+public class Movie implements Serializable{
     private String mname;
     private  double rating;
     private int image;

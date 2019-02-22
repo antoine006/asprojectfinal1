@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int NOTIFICATION_REMINDER_NIGHT = 3;
+    private static final int NOTIFICATION_REMINDER_NIGHT = 2;
     ArrayList<Item> arrayList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new Item(R.drawable.buisness, "Buisness"));
 
 
+        Intent notifyIntent = new Intent(this,MyReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast
+                (this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,  System.currentTimeMillis(),
+                1000 * 60 * 60 * 24, pendingIntent);
 
 
         for(int i = 0; i< arrayList.size() ; i++){
@@ -44,13 +50,6 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(arrayList.get(i).getImage());
 
             gallery.addView(view);
-
-            Intent notifyIntent = new Intent(this,MyReceiver.class);
-            PendingIntent pendingIntent = PendingIntent.getBroadcast
-                    (this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
-            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,  System.currentTimeMillis(),
-                    1000 * 60 * 60 * 24, pendingIntent);
 
         }
     }
