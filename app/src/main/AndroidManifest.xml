@@ -44,7 +44,8 @@
             android:name=".MyIntentService"
             android:exported="false" />
 
-        <activity android:name=".detailedmovie"></activity>
+        <activity android:name=".detailedmovie" />
+        <activity android:name=".WhislistCustomAdapter"></activity>
     </application>
 
 </manifest>

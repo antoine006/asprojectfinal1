@@ -3,18 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
 
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <LinearLayout
         android:layout_width="223dp"
         android:layout_height="153dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
 
         <TextView
             android:id="@+id/tvMovieName"
@@ -23,6 +32,9 @@
             android:text="movie title"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
             tools:text="asdasd" />
 
         <Button

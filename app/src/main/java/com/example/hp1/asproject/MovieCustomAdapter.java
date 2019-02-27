@@ -29,7 +29,6 @@ public class MovieCustomAdapter extends ArrayAdapter<Movie> {
     String userId = currentUser.getUid();
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference reference = database.getReference("Users");
-
     public MovieCustomAdapter(@NonNull Context context, int resource, @NonNull List<Movie> objects) {
         super(context, resource, objects);
         this.resourceLayout = resource;

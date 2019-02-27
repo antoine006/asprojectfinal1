@@ -29,8 +29,8 @@ public class MoviesListActivity extends AppCompatActivity implements AdapterView
 
         lvmovies = findViewById(R.id.lvMovies);
 
-        String category = getIntent().getStringExtra("categories");
-        Toast.makeText(this, getIntent().getStringExtra("categories"), Toast.LENGTH_LONG).show();
+        String category = getIntent().getStringExtra("Category");
+        Toast.makeText(this, getIntent().getStringExtra("Category"), Toast.LENGTH_LONG).show();
         if(category != null)
             fillSubCategoriesList(category);
 
@@ -38,23 +38,23 @@ public class MoviesListActivity extends AppCompatActivity implements AdapterView
         lvmovies.setAdapter(adapter);
         lvmovies.setOnItemClickListener(this);
     }
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Intent i=new Intent(this,detailedmovie.class);
-            i.putExtra("book", arrayList.get(position));
-            startActivity(i);
-        }
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent i=new Intent(this,detailedmovie.class);
+        i.putExtra("movie", arrayList.get(position));
+        startActivity(i);
+    }
 
-public void fillSubCategoriesList(String Category){
+    public void fillSubCategoriesList(String Category){
 
         Toast.makeText(this, Category, Toast.LENGTH_SHORT).show();
         if (Category.equals("sports")) {
             arrayList.add(new Movie("Creed", 4.5, R.drawable.creed, "this is the summary"));
             arrayList.add(new Movie("concussion", 4.5, R.drawable.concussion, "this is the summary"));
         }
-            if (Category.equals("photography")) {
-                arrayList.add(new Movie("Closer", 4.5, R.drawable.closer, "this is the summary"));
-                arrayList.add(new Movie("" +"pecker", 4.5, R.drawable.pecker, "this is the summary"));
-            }
+        if (Category.equals("photography")) {
+            arrayList.add(new Movie("Closer", 4.5, R.drawable.closer, "this is the summary"));
+            arrayList.add(new Movie("" +"pecker", 4.5, R.drawable.pecker, "this is the summary"));
+        }
 
         if (Category.equals("biography")) {
             arrayList.add(new Movie("The Wizard of lies", 4.5, R.drawable.thewizardoflies, "this is the summary"));
