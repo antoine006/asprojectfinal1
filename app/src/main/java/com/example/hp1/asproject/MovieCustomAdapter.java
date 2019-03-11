@@ -56,13 +56,8 @@ public class MovieCustomAdapter extends ArrayAdapter<Movie> {
                 public void onClick(View view) {
                     Toast.makeText(view.getContext(), "Added", Toast.LENGTH_SHORT).show();
                     reference.child(userId).push().setValue(p);
-                    btAddToWishList.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(mContext , WishlistActivity.class);
-                            mContext.startActivity(intent);
-                        }
-                    });
+                    Intent intent = new Intent(mContext , WishlistActivity.class);
+                    mContext.startActivity(intent);
                 }
             });
 
