@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 public class MoviesListActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ArrayList<Movie> arrayList = new ArrayList<>();
     ListView lvmovies;
-
+    Button btAddToWishList;
 
 
     @Override
@@ -37,6 +38,12 @@ public class MoviesListActivity extends AppCompatActivity implements AdapterView
         MovieCustomAdapter adapter = new MovieCustomAdapter(this, R.layout.movie_custom_row, arrayList);
         lvmovies.setAdapter(adapter);
         lvmovies.setOnItemClickListener(this);
+
+        btAddToWishList = findViewById(R.id.btAddToWishList);
+
+
+
+
     }
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent i=new Intent(this,detailedmovie.class);

@@ -9,14 +9,14 @@ public class Movie implements Serializable{
     private  double rating;
     private int image;
     private String summary;
-    private  boolean wighlist;
+    private  boolean wishlist;
 
       public  Movie (String mname,double rating,int image,String summary){
         this.mname=mname;
         this.rating=rating;
         this.summary=summary;
         this.image= image;
-        this.wighlist=false;
+        this.wishlist=false;
     }
 
     public String getMname() {
@@ -52,10 +52,10 @@ public class Movie implements Serializable{
     }
 
     public boolean isWighlist() {
-        return wighlist;
+        return wishlist;
     }
 
     public void setWighlist(boolean wighlist) {
-        this.wighlist = wighlist;
+        this.wishlist = wighlist;
     }
 }

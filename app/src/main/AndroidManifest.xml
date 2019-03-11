@@ -45,7 +45,8 @@
             android:exported="false" />
 
         <activity android:name=".detailedmovie" />
-        <activity android:name=".WhislistCustomAdapter"></activity>
+        <activity android:name=".WhislistCustomAdapter" />
+        <activity android:name=".WishlistCustomAdapter"></activity>
     </application>
 
 </manifest>
