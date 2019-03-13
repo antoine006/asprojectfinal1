@@ -19,6 +19,10 @@ public class Movie implements Serializable{
         this.wishlist=false;
     }
 
+    public Movie() {
+
+    }
+
     public String getMname() {
         return mname;
     }

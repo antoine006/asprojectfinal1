@@ -2,6 +2,7 @@ package com.example.hp1.asproject;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -47,6 +48,11 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
         View i = navigationView.getHeaderView(0);
         profilepicture = i.findViewById(R.id.profilepicture);
+        SharedPreferences pref = getSharedPreferences("Profile" ,MODE_PRIVATE);
+        String name = pref.getString("image","");
+        if (!name.equals("")){
+
+        }
 
         profilepicture.setOnClickListener(new View.OnClickListener() {
             @Override

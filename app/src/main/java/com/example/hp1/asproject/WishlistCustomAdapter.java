@@ -40,7 +40,7 @@ public class WishlistCustomAdapter extends ArrayAdapter<Movie> {
             v = LayoutInflater.from(mContext).inflate(resourceLayout,parent, false);
         final Movie p =getItem(position);
         if (p!=null){
-            TextView tv1 =(TextView) v.findViewById(R.id.tvMovieName);
+            TextView tv1 =(TextView) v.findViewById(R.id.tv1);
             tv1.setText(p.getMname());
 
             ImageView imageView=(ImageView)v.findViewById(R.id.imageview);
