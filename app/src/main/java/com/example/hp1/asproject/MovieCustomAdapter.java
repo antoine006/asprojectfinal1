@@ -60,7 +60,7 @@ public class MovieCustomAdapter extends ArrayAdapter<Movie> {
                     mContext.startActivity(intent);
                 }
             });
-           /* Button btInfo =v.findViewById(R.id.infBtn);
+           Button btInfo =v.findViewById(R.id.infBtn);
             btInfo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -69,7 +69,7 @@ public class MovieCustomAdapter extends ArrayAdapter<Movie> {
                     mContext.startActivity(intent);
                 }
             });
-*/
+
         }
         return v;
 
